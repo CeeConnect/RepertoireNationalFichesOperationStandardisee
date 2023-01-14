@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bonifications>
+    <bonification>
+        <id>CDPv37-1</id>
+        <code>CDP</code>
+        <nom>Coup de pouce Chauffage</nom>
+        <version>37.1</version>
+        <date_debut>2022-01-01</date_debut>
+        <date_fin>2025-12-31</date_fin>
+        <fiches>
+            <fiche>BAR-TH-104</fiche>
+            <fiche>BAR-TH-112</fiche>
+            <fiche>BAR-TH-113</fiche>
+            <fiche>BAR-TH-137</fiche>
+            <fiche>BAR-TH-143</fiche>
+            <fiche>BAR-TH-159</fiche>
+            <fiche>BAR-TH-163</fiche>
+        </fiches>
+        <regles>
+            <regle>
+                <description><![CDATA[BAR-TH-104 / BAR-TH-113 / BAR-TH-143 / BAR-TH-159 - Ménage modeste]]></description>
+                <expression><![CDATA[615400]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$O.fiche === 'BAR-TH-104' || $O.fiche === 'BAR-TH-113' ||$O.fiche === 'BAR-TH-143' ||$O.fiche === 'BAR-TH-159']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Equipement existant]]></description>
+                        <expression><![CDATA[$B.equipement_chauffage_existant !== 'CHAUDIERE_CONDENSATION']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Ménage modeste]]></description>
+                        <expression><![CDATA[$BF.menage_modeste === true]]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[BAR-TH-104 / BAR-TH-113 / BAR-TH-143 / BAR-TH-159 - Autres ménages]]></description>
+                <expression><![CDATA[384600]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$O.fiche === 'BAR-TH-104' || $O.fiche === 'BAR-TH-113' ||$O.fiche === 'BAR-TH-143' ||$O.fiche === 'BAR-TH-159']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Equipement existant]]></description>
+                        <expression><![CDATA[$B.equipement_chauffage_existant !== 'CHAUDIERE_CONDENSATION']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Ménage modeste]]></description>
+                        <expression><![CDATA[$BF.menage_modeste === false]]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[BAR-TH-137 - Ménages modestes]]></description>
+                <expression><![CDATA[107700]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$O.fiche === 'BAR-TH-137']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Equipement existant]]></description>
+                        <expression><![CDATA[$B.equipement_chauffage_existant !== 'CHAUDIERE_CONDENSATION']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Ménage modeste]]></description>
+                        <expression><![CDATA[$BF.menage_modeste === true]]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[BAR-TH-137 - Autres ménages]]></description>
+                <expression><![CDATA[69200]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$O.fiche === 'BAR-TH-137']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Equipement existant]]></description>
+                        <expression><![CDATA[$B.equipement_chauffage_existant !== 'CHAUDIERE_CONDENSATION']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Ménage modeste]]></description>
+                        <expression><![CDATA[$BF.menage_modeste === false]]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[BAR-TH-112 - Ménages modestes]]></description>
+                <expression><![CDATA[123100]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$O.fiche === 'BAR-TH-112']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'CHARBON']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Ménage modeste]]></description>
+                        <expression><![CDATA[$BF.menage_modeste === true]]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[BAR-TH-112 - Autres ménages]]></description>
+                <expression><![CDATA[76900]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$O.fiche === 'BAR-TH-112']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'CHARBON']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Ménage modeste]]></description>
+                        <expression><![CDATA[$BF.menage_modeste === false]]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[BAR-TH-163 - Ménages modestes]]></description>
+                <expression><![CDATA[107700]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$O.fiche === 'BAR-TH-163']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'CHARBON']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Ménage modeste]]></description>
+                        <expression><![CDATA[$BF.menage_modeste === true]]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[BAR-TH-163 - Autres ménages]]></description>
+                <expression><![CDATA[69200]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$O.fiche === 'BAR-TH-163']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'CHARBON']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Ménage modeste]]></description>
+                        <expression><![CDATA[$BF.menage_modeste === false]]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+        </regles>
+    </bonification>
+    <bonification>
+        <id>ZNIv37-1</id>
+        <code>ZNI</code>
+        <nom>Zones non interconnectées au réseau métropolitain continental de transport d'électricité</nom>
+        <version>37.1</version>
+        <date_debut>2022-01-01</date_debut>
+        <regles>
+            <regle>
+                <description><![CDATA[Montant forfaitaire]]></description>
+                <expression><![CDATA[$O.volume_cee * 2]]></expression>
+            </regle>
+        </regles>
+    </bonification>
+</bonifications>

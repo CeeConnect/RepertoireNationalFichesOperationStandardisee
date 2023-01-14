@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fiches>
+    <fiche>
+        <id>RES-CH-103.36-3</id>
+        <code>RES-CH-103</code>
+        <nom>Réhabilitation d'un poste de livraison de chaleur d'un bâtiment tertiaire</nom>
+        <version>36.3</version>
+        <secteur>RES</secteur>
+        <sous_secteur>Chaleur et Froid</sous_secteur>
+        <url>http://calculateur-cee.ademe.fr/pdf/display/260/RES-CH-103</url>
+        <metropole>true</metropole>
+        <outre_mer>true</outre_mer>
+        <conditions>
+            <condition>
+                <description><![CDATA[Bâtiment existant]]></description>
+                <expression><![CDATA[$B.age >= 2]]></expression>
+            </condition>
+        </conditions>
+        <regles>
+            <regle>
+                <description><![CDATA[Bureaux - H1]]></description>
+                <expression><![CDATA[210 * 1.1 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'BUREAUX']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Enseignement - H1]]></description>
+                <expression><![CDATA[140 * 1.1 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'ENSEIGNEMENT']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Santé - H1]]></description>
+                <expression><![CDATA[200 * 1.1 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'SANTE']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Commerces - H1]]></description>
+                <expression><![CDATA[170 * 1.1 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'COMMERCES']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Hôtellerie/Restauration - H1]]></description>
+                <expression><![CDATA[260 * 1.1 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'HOTELLERIE-RESTAURATION']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Autres - H1]]></description>
+                <expression><![CDATA[140 * 1.1 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'AUTRES']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Bureaux - H2]]></description>
+                <expression><![CDATA[210 * 0.9 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'BUREAUX']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Enseignement - H2]]></description>
+                <expression><![CDATA[140 * 0.9 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'ENSEIGNEMENT']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Santé - H2]]></description>
+                <expression><![CDATA[200 * 0.9 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'SANTE']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Commerces - H2]]></description>
+                <expression><![CDATA[170 * 0.9 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'COMMERCES']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Hôtellerie/Restauration - H2]]></description>
+                <expression><![CDATA[260 * 0.9 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'HOTELLERIE-RESTAURATION']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Autres - H2]]></description>
+                <expression><![CDATA[140 * 0.9 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'AUTRES']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Bureaux - H3]]></description>
+                <expression><![CDATA[210 * 0.6 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'BUREAUX']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Enseignement - H3]]></description>
+                <expression><![CDATA[140 * 0.6 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'ENSEIGNEMENT']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Santé - H3]]></description>
+                <expression><![CDATA[200 * 0.6 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'SANTE']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Commerces - H3]]></description>
+                <expression><![CDATA[170 * 0.6 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'COMMERCES']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Hôtellerie/Restauration - H3]]></description>
+                <expression><![CDATA[260 * 0.6 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'HOTELLERIE-RESTAURATION']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Autres - H3]]></description>
+                <expression><![CDATA[140 * 0.6 * $O.surface_chauffee]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Secteur d'activité]]></description>
+                        <expression><![CDATA[$B.secteur_activite === 'AUTRES']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+        </regles>
+    </fiche>
+    <fiche>
+        <id>RES-CH-104.36-3</id>
+        <code>RES-CH-104</code>
+        <nom>Réhabilitation d’un poste de livraison de chaleur d’un bâtiment résidentiel</nom>
+        <version>36.3</version>
+        <secteur>RES</secteur>
+        <sous_secteur>Chaleur et Froid</sous_secteur>
+        <url>http://calculateur-cee.ademe.fr/pdf/display/261/RES-CH-104</url>
+        <metropole>true</metropole>
+        <outre_mer>true</outre_mer>
+        <conditions>
+            <condition>
+                <description><![CDATA[Bâtiment existant]]></description>
+                <expression><![CDATA[$B.age >= 2]]></expression>
+            </condition>
+        </conditions>
+        <regles>
+            <regle>
+                <description><![CDATA[H1]]></description>
+                <expression><![CDATA[18300 * $B.appartements]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[H2]]></description>
+                <expression><![CDATA[15200 * $B.appartements]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[H3]]></description>
+                <expression><![CDATA[11200 * $B.appartements]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+        </regles>
+    </fiche>
+    <fiche>
+        <id>RES-CH-104.36-3</id>
+        <code>RES-CH-104</code>
+        <nom>Réhabilitation d’un poste de livraison de chaleur d’un bâtiment résidentiel</nom>
+        <version>36.3</version>
+        <secteur>RES</secteur>
+        <sous_secteur>Chaleur et Froid</sous_secteur>
+        <url>http://calculateur-cee.ademe.fr/pdf/display/261/RES-CH-104</url>
+        <metropole>true</metropole>
+        <outre_mer>true</outre_mer>
+        <conditions>
+            <condition>
+                <description><![CDATA[Bâtiment existant]]></description>
+                <expression><![CDATA[$B.age >= 2]]></expression>
+            </condition>
+        </conditions>
+        <regles>
+            <regle>
+                <description><![CDATA[H1]]></description>
+                <expression><![CDATA[18300 * $B.appartements]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[H2]]></description>
+                <expression><![CDATA[15200 * $B.appartements]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[H3]]></description>
+                <expression><![CDATA[11200 * $B.appartements]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+        </regles>
+    </fiche>
+</fiches>
