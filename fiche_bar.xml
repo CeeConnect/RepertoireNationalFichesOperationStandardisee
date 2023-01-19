@@ -20,6 +20,10 @@
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.age >= 2]]></expression>
             </condition>
+            <condition>
+                <description><![CDATA[Métropole]]></description>
+                <expression><![CDATA[$B.metropole === true]]></expression>
+            </condition>
         </conditions>
         <regles>
             <regle>
@@ -805,7 +809,7 @@
         <regles>
             <regle>
                 <description><![CDATA[Maison - H1 - Suivi du confort]]></description>
-                <expression><![CDATA[4400 * $O.facteur_correctif_shab_7 + 650]]></expression>
+                <expression><![CDATA[4400 * $B.facteur_correctif_shab_7 + 650]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de logement]]></description>
@@ -823,7 +827,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H2 - Suivi du confort]]></description>
-                <expression><![CDATA[3700 * $O.facteur_correctif_shab_7 + 650]]></expression>
+                <expression><![CDATA[3700 * $B.facteur_correctif_shab_7 + 650]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de logement]]></description>
@@ -841,7 +845,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H3 - Suivi du confort]]></description>
-                <expression><![CDATA[2700 * $O.facteur_correctif_shab_7 + 650]]></expression>
+                <expression><![CDATA[2700 * $B.facteur_correctif_shab_7 + 650]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de logement]]></description>
@@ -859,7 +863,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H1 - Sans suivi du confort]]></description>
-                <expression><![CDATA[4400 * $O.facteur_correctif_shab_7 + 650]]></expression>
+                <expression><![CDATA[4400 * $B.facteur_correctif_shab_7 + 650]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de logement]]></description>
@@ -877,7 +881,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H2 - Sans suivi du confort]]></description>
-                <expression><![CDATA[3700 * $O.facteur_correctif_shab_7 + 650]]></expression>
+                <expression><![CDATA[3700 * $B.facteur_correctif_shab_7 + 650]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de logement]]></description>
@@ -895,7 +899,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H3 - Sans suivi du confort]]></description>
-                <expression><![CDATA[2700 * $O.facteur_correctif_shab_7 + 650]]></expression>
+                <expression><![CDATA[2700 * $B.facteur_correctif_shab_7 + 650]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de logement]]></description>
@@ -913,7 +917,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - H1 - Suivi du confort]]></description>
-                <expression><![CDATA[2600 * $O.facteur_correctif_shab_7 + 650]]></expression>
+                <expression><![CDATA[2600 * $B.facteur_correctif_shab_7 + 650]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de logement]]></description>
@@ -931,7 +935,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - H2 - Suivi du confort]]></description>
-                <expression><![CDATA[2200 * $O.facteur_correctif_shab_7 + 650]]></expression>
+                <expression><![CDATA[2200 * $B.facteur_correctif_shab_7 + 650]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de logement]]></description>
@@ -949,7 +953,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - H3 - Suivi du confort]]></description>
-                <expression><![CDATA[1700 * $O.facteur_correctif_shab_7 + 650]]></expression>
+                <expression><![CDATA[1700 * $B.facteur_correctif_shab_7 + 650]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de logement]]></description>
@@ -967,7 +971,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - H1 - Sans suivi du confort]]></description>
-                <expression><![CDATA[2600 * $O.facteur_correctif_shab_7 + 650]]></expression>
+                <expression><![CDATA[2600 * $B.facteur_correctif_shab_7 + 650]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de logement]]></description>
@@ -985,7 +989,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - H2 - Sans suivi du confort]]></description>
-                <expression><![CDATA[2200 * $O.facteur_correctif_shab_7 + 650]]></expression>
+                <expression><![CDATA[2200 * $B.facteur_correctif_shab_7 + 650]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de logement]]></description>
@@ -1003,7 +1007,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - H3 - Sans suivi du confort]]></description>
-                <expression><![CDATA[1700 * $O.facteur_correctif_shab_7 + 650]]></expression>
+                <expression><![CDATA[1700 * $B.facteur_correctif_shab_7 + 650]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de logement]]></description>
@@ -2251,7 +2255,7 @@
         <regles>
             <regle>
                 <description><![CDATA[Maison - H1]]></description>
-                <expression><![CDATA[46900 * $O.facteur_correctif_shab_5]]></expression>
+                <expression><![CDATA[46900 * $B.facteur_correctif_shab_5]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -2265,7 +2269,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H2]]></description>
-                <expression><![CDATA[39600 * $O.facteur_correctif_shab_5]]></expression>
+                <expression><![CDATA[39600 * $B.facteur_correctif_shab_5]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -2279,7 +2283,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H3]]></description>
-                <expression><![CDATA[28500 * $O.facteur_correctif_shab_5]]></expression>
+                <expression><![CDATA[28500 * $B.facteur_correctif_shab_5]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -2745,7 +2749,7 @@
         <regles>
             <regle>
                 <description><![CDATA[Electricité - H1]]></description>
-                <expression><![CDATA[2200 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[2200 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -2759,7 +2763,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Electricité - H2]]></description>
-                <expression><![CDATA[1800 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[1800 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -2773,7 +2777,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Electricité - H3]]></description>
-                <expression><![CDATA[1200 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[1200 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -2787,7 +2791,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Combustible - H1]]></description>
-                <expression><![CDATA[3300 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[3300 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -2801,7 +2805,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Combustible - H2]]></description>
-                <expression><![CDATA[2700 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[2700 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -2815,7 +2819,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Combustible - H3]]></description>
-                <expression><![CDATA[1800 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[1800 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -3906,7 +3910,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Autoréglable - Installation individuelle - H1]]></description>
-                <expression><![CDATA[29700 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[29700 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type d'équipement']]></description>
@@ -3924,7 +3928,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Autoréglable - Installation individuelle - H2]]></description>
-                <expression><![CDATA[32500 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[32500 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type d'équipement']]></description>
@@ -3942,7 +3946,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Autoréglable - Installation individuelle - H3]]></description>
-                <expression><![CDATA[21600 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[21600 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type d'équipement']]></description>
@@ -3960,7 +3964,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Modulé - Installation individuelle - H1]]></description>
-                <expression><![CDATA[42000 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[42000 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type d'équipement']]></description>
@@ -3978,7 +3982,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Modulé - Installation individuelle - H2]]></description>
-                <expression><![CDATA[34400 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[34400 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type d'équipement']]></description>
@@ -3996,7 +4000,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Modulé - Installation individuelle - H3]]></description>
-                <expression><![CDATA[22900 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[22900 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type d'équipement']]></description>
@@ -4079,7 +4083,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Installation individuelle - H1]]></description>
-                <expression><![CDATA[31600 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[31600 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type d'installation']]></description>
@@ -4093,7 +4097,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Installation individuelle - H2]]></description>
-                <expression><![CDATA[25900 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[25900 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type d'installation']]></description>
@@ -4107,7 +4111,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Installation individuelle - H3]]></description>
-                <expression><![CDATA[17200 * $O.facteur_correctif_shab_7]]></expression>
+                <expression><![CDATA[17200 * $B.facteur_correctif_shab_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type d'installation']]></description>
@@ -4589,7 +4593,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H1]]></description>
-                <expression><![CDATA[48300 * $O.facteur_correctif_shab_5]]></expression>
+                <expression><![CDATA[48300 * $B.facteur_correctif_shab_5]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Immeuble]]></description>
@@ -4603,7 +4607,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H2]]></description>
-                <expression><![CDATA[40200 * $O.facteur_correctif_shab_5]]></expression>
+                <expression><![CDATA[40200 * $B.facteur_correctif_shab_5]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Immeuble]]></description>
@@ -4617,7 +4621,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H3]]></description>
-                <expression><![CDATA[29600 * $O.facteur_correctif_shab_5]]></expression>
+                <expression><![CDATA[29600 * $B.facteur_correctif_shab_5]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Immeuble]]></description>
@@ -5051,7 +5055,7 @@
         <regles>
             <regle>
                 <description><![CDATA[Montant forfaitaire]]></description>
-                <expression><![CDATA[($O.cef_initial - $O.cef_projet) * $B.shab * 18]]></expression>
+                <expression><![CDATA[($O.cef_initial - $O.cef_projet) * $B.surface_habitable * 18]]></expression>
             </regle>
         </regles>
     </fiche>
@@ -7357,7 +7361,7 @@
         <regles>
             <regle>
                 <description><![CDATA[Maison - Cef initial - Cef projet]]></description>
-                <expression><![CDATA[($O.cef_initial - $O.cef_projet) * $B.shab * 18]]></expression>
+                <expression><![CDATA[($O.cef_initial - $O.cef_projet) * $B.surface_habitable * 18]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -7540,7 +7544,7 @@
         <regles>
             <regle>
                 <description><![CDATA[Maison - H1 - Haut rendement]]></description>
-                <expression><![CDATA[30700 * $O.facteur_correctif_shab_4]]></expression>
+                <expression><![CDATA[30700 * $B.facteur_correctif_shab_4]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -7558,7 +7562,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H2 - Haut rendement]]></description>
-                <expression><![CDATA[26000 * $O.facteur_correctif_shab_4]]></expression>
+                <expression><![CDATA[26000 * $B.facteur_correctif_shab_4]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -7576,7 +7580,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H3 - Haut rendement]]></description>
-                <expression><![CDATA[22200 * $O.facteur_correctif_shab_4]]></expression>
+                <expression><![CDATA[22200 * $B.facteur_correctif_shab_4]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -7594,7 +7598,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H1 - Condensation]]></description>
-                <expression><![CDATA[36500 * $O.facteur_correctif_shab_4]]></expression>
+                <expression><![CDATA[36500 * $B.facteur_correctif_shab_4]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -7612,7 +7616,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H2 - Condensation]]></description>
-                <expression><![CDATA[31100 * $O.facteur_correctif_shab_4]]></expression>
+                <expression><![CDATA[31100 * $B.facteur_correctif_shab_4]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -7630,7 +7634,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H3 - Condensation]]></description>
-                <expression><![CDATA[27400 * $O.facteur_correctif_shab_4]]></expression>
+                <expression><![CDATA[27400 * $B.facteur_correctif_shab_4]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>

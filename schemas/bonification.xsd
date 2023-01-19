@@ -10,7 +10,7 @@
                             <xs:element name="id">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:pattern value="\w*v\d*\-\d*"/>
+                                        <xs:pattern value="(ZNI|GPE-ZNI|ETS|CPE|GPE|CFT|CRC|CRM|CTH|CDP)v[0-9]*"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
@@ -18,8 +18,16 @@
                             <xs:element name="code">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:enumeration value="CDP"/>
                                         <xs:enumeration value="ZNI"/>
+                                        <xs:enumeration value="GPE-ZNI"/>
+                                        <xs:enumeration value="ETS"/>
+                                        <xs:enumeration value="CPE"/>
+                                        <xs:enumeration value="GPE"/>
+                                        <xs:enumeration value="CFT"/>
+                                        <xs:enumeration value="CRC"/>
+                                        <xs:enumeration value="CRM"/>
+                                        <xs:enumeration value="CTH"/>
+                                        <xs:enumeration value="CDP"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
@@ -36,7 +44,7 @@
                             <xs:element name="version">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:pattern value="\d*\.{1}\d*"/>
+                                        <xs:pattern value="\d*"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
@@ -52,8 +60,41 @@
                                     <xs:restriction base="xs:date"></xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
+                            <!-- Secteurs -->
+                            <xs:element name="secteurs" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="secteur" minOccurs="0" maxOccurs="6">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="AGRI"/>
+                                                    <xs:enumeration value="BAR"/>
+                                                    <xs:enumeration value="BAT"/>
+                                                    <xs:enumeration value="IND"/>
+                                                    <xs:enumeration value="RES"/>
+                                                    <xs:enumeration value="TRA"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
                             <!-- Fiches -->
-                            <xs:element name="fiches" minOccurs="0">
+                            <xs:element name="fiches_applicables" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="fiche" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="(AGRI|BAR|BAT|IND|RES|TRA)+-+(BA|CH|EC|EN|EQ|SE|TH|UT)+-+\d*(-+SE)?"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <!-- Fiches exclues -->
+                            <xs:element name="fiches_exclues" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="fiche" minOccurs="0" maxOccurs="unbounded">

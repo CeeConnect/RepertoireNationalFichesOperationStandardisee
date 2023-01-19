@@ -2,13 +2,156 @@
 <?xml-model href="./schemas/bonification.xsd" ?>
 <bonifications>
     <bonification>
-        <id>CDPv37-1</id>
+        <id>CFTv7</id>
+        <code>CFT</code>
+        <nom>Coup de pouce Chauffage des bâtiments résidentiels collectifs et tertiaires</nom>
+        <version>7</version>
+        <date_debut>2023-01-01</date_debut>
+        <date_fin>2023-02-28</date_fin>
+        <fiches_applicables>
+            <fiche>BAT-TH-113</fiche>
+            <fiche>BAT-TH-127</fiche>
+            <fiche>BAT-TH-140</fiche>
+            <fiche>BAT-TH-141</fiche>
+            <fiche>BAT-TH-157</fiche>
+            <fiche>BAR-TH-137</fiche>
+            <fiche>BAR-TH-150</fiche>
+            <fiche>BAR-TH-165</fiche>
+            <fiche>BAR-TH-166</fiche>
+        </fiches_applicables>
+        <conditions>
+            <condition>
+                <description><![CDATA[Energie de chauffage]]></description>
+                <expression><![CDATA[$B.energie_chauffage === 'CHARBON' || $B.energie_chauffage === 'FIOUL' || $B.energie_chauffage === 'GAZ_NATUREL']]></expression>
+            </condition>
+        </conditions>
+        <regles>
+            <!-- BAR-TH-137 -->
+            <regle>
+                <description><![CDATA[BAR-TH-137 - Logements <= 125]]></description>
+                <expression><![CDATA[12000000]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-137']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Nombre de logements]]></description>
+                        <expression><![CDATA[$B.logements <= 125]]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[BAR-TH-137 - Logements > 125]]></description>
+                <expression><![CDATA[77000 * $B.logements + 2300000]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-137']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Nombre de logements]]></description>
+                        <expression><![CDATA[$B.logements > 125]]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <!-- BAR-TH-150 -->
+            <regle>
+                <description><![CDATA[BAR-TH-150 - Gaz naturel]]></description>
+                <expression><![CDATA[$FOS.volume_cee * 1.3]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-150']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage === 'GAZ_NATUREL']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[BAR-TH-150 - Fioul ou charbon]]></description>
+                <expression><![CDATA[$FOS.volume_cee * 2]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-150']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage === 'CHARBON' || $B.energie_chauffage === 'FIOUL']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <!-- BAR-TH-165 -->
+            <regle>
+                <description><![CDATA[BAR-TH-165 - Gaz naturel]]></description>
+                <expression><![CDATA[$FOS.volume_cee * 3]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-165']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage === 'GAZ_NATUREL']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[BAR-TH-165 - Fioul ou charbon]]></description>
+                <expression><![CDATA[$FOS.volume_cee * 4]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-165']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage === 'CHARBON' || $B.energie_chauffage === 'FIOUL']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <!-- BAR-TH-166 -->
+            <regle>
+                <description><![CDATA[BAR-TH-166 - Gaz naturel]]></description>
+                <expression><![CDATA[$FOS.volume_cee * 3]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-166']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage === 'GAZ_NATUREL']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[BAR-TH-166 - Fioul ou charbon]]></description>
+                <expression><![CDATA[$FOS.volume_cee * 4]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Fiche]]></description>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-166']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Energie de chauffage]]></description>
+                        <expression><![CDATA[$B.energie_chauffage === 'CHARBON' || $B.energie_chauffage === 'FIOUL']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+        </regles>
+    </bonification>
+    <bonification>
+        <id>CDPv11</id>
         <code>CDP</code>
-        <nom>Coup de pouce Chauffage</nom>
-        <version>37.1</version>
-        <date_debut>2022-01-01</date_debut>
-        <date_fin>2025-12-31</date_fin>
-        <fiches>
+        <nom>Coup de pouce Chauffage des bâtiments résidentiels collectifs et tertiaires</nom>
+        <version>11</version>
+        <date_debut>2023-01-01</date_debut>
+        <date_fin>2023-02-28</date_fin>
+        <fiches_applicables>
             <fiche>BAR-TH-104</fiche>
             <fiche>BAR-TH-112</fiche>
             <fiche>BAR-TH-113</fiche>
@@ -16,15 +159,16 @@
             <fiche>BAR-TH-143</fiche>
             <fiche>BAR-TH-159</fiche>
             <fiche>BAR-TH-163</fiche>
-        </fiches>
+        </fiches_applicables>
         <regles>
+            <!-- BAR-TH-104 / BAR-TH-113 / BAR-TH-143 / BAR-TH-159 -->
             <regle>
                 <description><![CDATA[BAR-TH-104 / BAR-TH-113 / BAR-TH-143 / BAR-TH-159 - Ménage modeste]]></description>
                 <expression><![CDATA[615400]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Fiche]]></description>
-                        <expression><![CDATA[$O.fiche === 'BAR-TH-104' || $O.fiche === 'BAR-TH-113' ||$O.fiche === 'BAR-TH-143' ||$O.fiche === 'BAR-TH-159']]></expression>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-104' || $FOS.code === 'BAR-TH-113' ||$FOS.code === 'BAR-TH-143' ||$FOS.code === 'BAR-TH-159']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Equipement existant]]></description>
@@ -46,7 +190,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Fiche]]></description>
-                        <expression><![CDATA[$O.fiche === 'BAR-TH-104' || $O.fiche === 'BAR-TH-113' ||$O.fiche === 'BAR-TH-143' ||$O.fiche === 'BAR-TH-159']]></expression>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-104' || $FOS.code === 'BAR-TH-113' ||$FOS.code === 'BAR-TH-143' ||$FOS.code === 'BAR-TH-159']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Equipement existant]]></description>
@@ -68,7 +212,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Fiche]]></description>
-                        <expression><![CDATA[$O.fiche === 'BAR-TH-137']]></expression>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-137']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Equipement existant]]></description>
@@ -90,7 +234,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Fiche]]></description>
-                        <expression><![CDATA[$O.fiche === 'BAR-TH-137']]></expression>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-137']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Equipement existant]]></description>
@@ -112,7 +256,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Fiche]]></description>
-                        <expression><![CDATA[$O.fiche === 'BAR-TH-112']]></expression>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-112']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -130,7 +274,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Fiche]]></description>
-                        <expression><![CDATA[$O.fiche === 'BAR-TH-112']]></expression>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-112']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -148,7 +292,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Fiche]]></description>
-                        <expression><![CDATA[$O.fiche === 'BAR-TH-163']]></expression>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-163']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -166,7 +310,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Fiche]]></description>
-                        <expression><![CDATA[$O.fiche === 'BAR-TH-163']]></expression>
+                        <expression><![CDATA[$FOS.code === 'BAR-TH-163']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -181,15 +325,53 @@
         </regles>
     </bonification>
     <bonification>
-        <id>ZNIv37-1</id>
+        <id>ZNIv1</id>
         <code>ZNI</code>
         <nom>Zones non interconnectées au réseau métropolitain continental de transport d'électricité</nom>
-        <version>37.1</version>
+        <version>1</version>
         <date_debut>2022-01-01</date_debut>
         <regles>
             <regle>
                 <description><![CDATA[Montant forfaitaire]]></description>
                 <expression><![CDATA[$O.volume_cee * 2]]></expression>
+            </regle>
+        </regles>
+    </bonification>
+    <bonification>
+        <id>CPEv1</id>
+        <code>CPE</code>
+        <nom>Contrat de performance énergétique - Bâtiment résidentiel et tertiaire</nom>
+        <version>1</version>
+        <date_debut>2022-01-01</date_debut>
+        <secteurs>
+            <secteur>BAR</secteur>
+            <secteur>BAT</secteur>
+        </secteurs>
+        <fiches_exclues>
+            <fiche>BAR-SE-105</fiche>
+            <fiche>BAR-TH-107-SE</fiche>
+            <fiche>BAT-SE-104</fiche>
+        </fiches_exclues>
+        <regles>
+            <regle>
+                <description><![CDATA[Durée de garantie < 10 ans]]></description>
+                <expression><![CDATA[1 + 2 * $O.volume_economies_energie_garanti]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Durée de garantie]]></description>
+                        <expression><![CDATA[$O.duree_garantie_cpe < 10]]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Durée de garantie >= 10 ans]]></description>
+                <expression><![CDATA[1 + 3 * $O.volume_economies_energie_garanti]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Durée de garantie]]></description>
+                        <expression><![CDATA[$O.duree_garantie_cpe >= 10]]></expression>
+                    </condition>
+                </conditions>
             </regle>
         </regles>
     </bonification>
