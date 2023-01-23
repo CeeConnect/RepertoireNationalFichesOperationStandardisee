@@ -1800,10 +1800,10 @@
         </regles>
     </fiche>
     <fiche>
-        <id>BAR-TH-101v17-4</id>
+        <id>BAR-TH-101v17-1</id>
         <code>BAR-TH-101</code>
         <nom>Chauffe-eau solaire individuel</nom>
-        <version>17.4</version>
+        <version>17.1</version>
         <date_debut>2022-01-01</date_debut>
         <secteur>BAR</secteur>
         <sous_secteur>Thermique</sous_secteur>
@@ -1853,10 +1853,10 @@
         </regles>
     </fiche>
     <fiche>
-        <id>BAR-TH-102v17-4</id>
+        <id>BAR-TH-102v17-1</id>
         <code>BAR-TH-102</code>
         <nom>Chauffe-eau solaire collectif</nom>
-        <version>17.4</version>
+        <version>17.1</version>
         <date_debut>2022-01-01</date_debut>
         <secteur>BAR</secteur>
         <sous_secteur>Thermique</sous_secteur>

@@ -36,7 +36,7 @@ Version 0.9
 | sous_secteur | Sous-secteur d'application | Oui | Bâtiments, Chaleur et Froid, Eclairage, Enveloppe, Equipement, Services, Thermique, Utilités | EQ |
 | code | Code de l'entité | Oui | XXX-XX-XXX | BAR-EN-101 |
 | date_debut | Date d'entrée en vigueur de la fiche | Oui | yyyy-mm-dd | 2022-01-01 |
-| date_debut | Date d'abrogation de la fiche | Non | yyyy-mm-dd | 2023-01-01 |
+| date_find | Date d'abrogation de la fiche | Non | yyyy-mm-dd | 2023-01-01 |
 | nom | Nom de l'entité | Oui | Chaîne de caractères | Isolation des combles |
 | url | URL d'accès à la fiche au format PDF | Oui | URL | http://calculateur-cee.ademe.fr/pdf/display/286/BAR-EN-101 |
 | metropole | Application de la fiche en france métropolitaine | Oui | Boolean | 1 |
@@ -45,6 +45,9 @@ Version 0.9
 | regles | Liste des règles de calcul de la fiche | Oui | Element composé | cf [Regle](#regle) |
 
 * La version des fiches d'opération standardisée est égale à la version de l'arrêté applicable
+
+
+⚠️ Une fiche est applicable dès sa date d'entrée en vigueur, et ne l'est plus à sa date d'abrogation.
 
 #### Bâtiment résidentiel
 
