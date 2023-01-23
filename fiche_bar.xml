@@ -2727,7 +2727,7 @@
         </regles>
     </fiche>
     <fiche>
-        <id>BAR-EN-111v17-1</id>
+        <id>BAR-TH-111v17-1</id>
         <code>BAR-TH-111</code>
         <nom>Régulation par sonde de température extérieure</nom>
         <version>17.1</version>
