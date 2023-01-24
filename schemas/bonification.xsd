@@ -1,122 +1,127 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="bonifications">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="bonification" maxOccurs="unbounded">
-                    <xs:complexType>
-						<xs:sequence>
-                            <!-- ID -->
-                            <xs:element name="id">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:pattern value="(ZNI|GPE-ZNI|ETS|CPE|GPE|CFT|CRC|CRM|CTH|CDP)v[0-9]*"/>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                            <!-- Code -->
-                            <xs:element name="code">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:enumeration value="ZNI"/>
-                                        <xs:enumeration value="GPE-ZNI"/>
-                                        <xs:enumeration value="ETS"/>
-                                        <xs:enumeration value="CPE"/>
-                                        <xs:enumeration value="GPE"/>
-                                        <xs:enumeration value="CFT"/>
-                                        <xs:enumeration value="CRC"/>
-                                        <xs:enumeration value="CRM"/>
-                                        <xs:enumeration value="CTH"/>
-                                        <xs:enumeration value="CDP"/>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                            <!-- nom -->
-                            <xs:element name="nom">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:minLength value="1"/>
-                                        <xs:maxLength value="240"/>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                            <!-- Version -->
-                            <xs:element name="version">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:pattern value="\d*"/>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                            <!-- date de début -->
-                            <xs:element name="date_debut">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:date"></xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                            <!-- date de fin -->
-                            <xs:element name="date_fin" minOccurs="0">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:date"></xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                            <!-- Secteurs -->
-                            <xs:element name="secteurs" minOccurs="0">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="secteur" minOccurs="0" maxOccurs="6">
-                                            <xs:simpleType>
-                                                <xs:restriction base="xs:string">
-                                                    <xs:enumeration value="AGRI"/>
-                                                    <xs:enumeration value="BAR"/>
-                                                    <xs:enumeration value="BAT"/>
-                                                    <xs:enumeration value="IND"/>
-                                                    <xs:enumeration value="RES"/>
-                                                    <xs:enumeration value="TRA"/>
-                                                </xs:restriction>
-                                            </xs:simpleType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                            <!-- Fiches -->
-                            <xs:element name="fiches_applicables" minOccurs="0">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="fiche" minOccurs="0" maxOccurs="unbounded">
-                                            <xs:simpleType>
-                                                <xs:restriction base="xs:string">
-                                                    <xs:pattern value="(AGRI|BAR|BAT|IND|RES|TRA)+-+(BA|CH|EC|EN|EQ|SE|TH|UT)+-+\d*(-+SE)?"/>
-                                                </xs:restriction>
-                                            </xs:simpleType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                            <!-- Fiches exclues -->
-                            <xs:element name="fiches_exclues" minOccurs="0">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="fiche" minOccurs="0" maxOccurs="unbounded">
-                                            <xs:simpleType>
-                                                <xs:restriction base="xs:string">
-                                                    <xs:pattern value="(AGRI|BAR|BAT|IND|RES|TRA)+-+(BA|CH|EC|EN|EQ|SE|TH|UT)+-+\d*(-+SE)?"/>
-                                                </xs:restriction>
-                                            </xs:simpleType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                            <!-- Conditions -->
-                            <xs:element ref="conditions" minOccurs="0" maxOccurs="1" />
-                            <!-- Regles -->
-                            <xs:element ref="regles" minOccurs="0" maxOccurs="1" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-        </xs:complexType>
+    <!-- Unique -->
+    <xs:element name="bonifications" type="Unique">
+        <xs:unique name="idUniqueness">
+            <xs:selector xpath="bonification" />
+            <xs:field xpath="id" />
+        </xs:unique>
     </xs:element>
+    <xs:complexType name="Unique">
+        <xs:sequence>
+            <xs:element name="bonification" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <!-- ID -->
+                        <xs:element name="id">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="(ZNI|GPE-ZNI|ETS|CPE|GPE|CFT|CRC|CRM|CTH|CDP)v[0-9]*"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- Code -->
+                        <xs:element name="code">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="ZNI"/>
+                                    <xs:enumeration value="GPE-ZNI"/>
+                                    <xs:enumeration value="ETS"/>
+                                    <xs:enumeration value="CPE"/>
+                                    <xs:enumeration value="GPE"/>
+                                    <xs:enumeration value="CFT"/>
+                                    <xs:enumeration value="CRC"/>
+                                    <xs:enumeration value="CRM"/>
+                                    <xs:enumeration value="CTH"/>
+                                    <xs:enumeration value="CDP"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- nom -->
+                        <xs:element name="nom">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:minLength value="1"/>
+                                    <xs:maxLength value="240"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- Version -->
+                        <xs:element name="version">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="\d*"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- date de début -->
+                        <xs:element name="date_debut">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:date"></xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- date de fin -->
+                        <xs:element name="date_fin" minOccurs="0">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:date"></xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- Secteurs -->
+                        <xs:element name="secteurs" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="secteur" minOccurs="0" maxOccurs="6">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="AGRI"/>
+                                                <xs:enumeration value="BAR"/>
+                                                <xs:enumeration value="BAT"/>
+                                                <xs:enumeration value="IND"/>
+                                                <xs:enumeration value="RES"/>
+                                                <xs:enumeration value="TRA"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <!-- Fiches -->
+                        <xs:element name="fiches_applicables" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fiche" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="(AGRI|BAR|BAT|IND|RES|TRA)+-+(BA|CH|EC|EN|EQ|SE|TH|UT)+-+\d*(-+SE)?"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <!-- Fiches exclues -->
+                        <xs:element name="fiches_exclues" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fiche" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="(AGRI|BAR|BAT|IND|RES|TRA)+-+(BA|CH|EC|EN|EQ|SE|TH|UT)+-+\d*(-+SE)?"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <!-- Conditions -->
+                        <xs:element ref="conditions" minOccurs="0" maxOccurs="1" />
+                        <!-- Regles -->
+                        <xs:element ref="regles" minOccurs="0" maxOccurs="1" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
     <!-- Conditions -->
     <xs:element name="conditions">
