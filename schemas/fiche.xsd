@@ -9,7 +9,7 @@
     </xs:element>
     <xs:complexType name="Unique">
         <xs:sequence>
-            <xs:element name="fiche" maxOccurs="unbounded">
+            <xs:element name="fiche" minOccurs="0" maxOccurs="unbounded">
                 <xs:complexType>
                     <xs:sequence>
                         <!-- ID -->
@@ -99,24 +99,6 @@
                         </xs:element>
                         <!-- Zone d'application - Outre mer -->
                         <xs:element name="outre_mer">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:boolean"></xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                        <!-- Zone d'application - Maison -->
-                        <xs:element name="maison">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:boolean"></xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                        <!-- Zone d'application - Appartement -->
-                        <xs:element name="appartement">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:boolean"></xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                        <!-- Zone d'application - Immeuble -->
-                        <xs:element name="immeuble">
                             <xs:simpleType>
                                 <xs:restriction base="xs:boolean"></xs:restriction>
                             </xs:simpleType>
