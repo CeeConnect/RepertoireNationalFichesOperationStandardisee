@@ -12,7 +12,7 @@
             <xs:element name="fiche" minOccurs="0" maxOccurs="unbounded">
                 <xs:complexType>
                     <xs:sequence>
-                        <!-- ID -->
+                        <!-- ID unique de la fiche  -->
                         <xs:element name="id">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
@@ -28,7 +28,7 @@
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
-                        <!-- nom -->
+                        <!-- Nom -->
                         <xs:element name="nom">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
@@ -37,7 +37,7 @@
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
-                        <!-- Version -->
+                        <!-- Version au format XX.X -->
                         <xs:element name="version">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
@@ -45,19 +45,19 @@
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
-                        <!-- date de début -->
+                        <!-- Date d'application -->
                         <xs:element name="date_debut">
                             <xs:simpleType>
                                 <xs:restriction base="xs:date"></xs:restriction>
                             </xs:simpleType>
                         </xs:element>
-                        <!-- date de fin -->
+                        <!-- Date d'abrogation -->
                         <xs:element name="date_fin" minOccurs="0">
                             <xs:simpleType>
                                 <xs:restriction base="xs:date"></xs:restriction>
                             </xs:simpleType>
                         </xs:element>
-                        <!-- Secteur -->
+                        <!-- Secteur d'application -->
                         <xs:element name="secteur">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
@@ -70,7 +70,7 @@
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
-                        <!-- Sous-secteur -->
+                        <!-- Sous-secteur d'application -->
                         <xs:element name="sous_secteur">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
@@ -85,7 +85,7 @@
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
-                        <!-- url -->
+                        <!-- Url d'accès à la fiche -->
                         <xs:element name="url">
                             <xs:simpleType>
                                 <xs:restriction base="xs:anyURI"></xs:restriction>
