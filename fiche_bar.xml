@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<?xml-model href="./schemas/fiche.xsd" ?>
+<?xml-model href="./schemas/fiche_bar.xsd" ?>
 <fiches>
     <fiche>
         <id>BAR-EN-101v39-4</id>
