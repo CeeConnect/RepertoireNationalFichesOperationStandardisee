@@ -43,7 +43,7 @@ Le versionnement sur la base réglementaire n'est que partiellement applicable c
 
 Il est donc retenu le versionnement suivant :
 
-- Le versionnement comment au 01/01/2022
+- Le versionnement comment au 01/01/2023
 - La première version de chaque entité reprend la version applicable de l'article applicable au sein de l'arrêté du 29 décembre 2014 à cette date
 - La modification de l'article applicable au sein de l'arrêté du 29 décembre 2014 **entrainant une modification des conditions d'application et/ou de calcul des montants de la bonification** a pour conséquence la création d'une nouvelle entité dont la version sera prise égale à la nouvelle version de l'article modificatif.
 
