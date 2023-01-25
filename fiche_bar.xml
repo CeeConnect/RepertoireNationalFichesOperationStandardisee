@@ -18,7 +18,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
             <condition>
                 <description><![CDATA[Métropole]]></description>
@@ -75,7 +75,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -128,7 +128,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -181,7 +181,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -288,7 +288,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -349,7 +349,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age >= 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -363,7 +363,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age < 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -377,7 +377,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age >= 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -391,7 +391,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age < 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -422,7 +422,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age >= 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Resistance thermique]]></description>
@@ -440,7 +440,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age >= 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Resistance thermique]]></description>
@@ -458,7 +458,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age < 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Resistance thermique]]></description>
@@ -476,7 +476,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age < 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Resistance thermique]]></description>
@@ -494,7 +494,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age >= 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Resistance thermique]]></description>
@@ -512,7 +512,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age >= 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Resistance thermique]]></description>
@@ -530,7 +530,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age < 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Resistance thermique]]></description>
@@ -548,7 +548,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age < 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Resistance thermique]]></description>
@@ -575,7 +575,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -628,7 +628,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -671,7 +671,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -724,7 +724,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -803,7 +803,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -1042,7 +1042,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -1095,7 +1095,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -1496,7 +1496,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -1763,7 +1763,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -1816,7 +1816,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -1869,7 +1869,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -1902,7 +1902,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -2249,7 +2249,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -2356,7 +2356,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -2463,7 +2463,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -2570,7 +2570,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -2743,7 +2743,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -2850,7 +2850,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -2903,7 +2903,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -2956,7 +2956,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -3129,7 +3129,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -3302,7 +3302,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -3619,7 +3619,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -3684,7 +3684,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -3753,7 +3753,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Âge de bâtiment]]></description>
-                        <expression><![CDATA[$B.age >= 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Département]]></description>
@@ -3767,7 +3767,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Âge de bâtiment]]></description>
-                        <expression><![CDATA[$B.age < 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Département]]></description>
@@ -3781,7 +3781,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Âge de bâtiment]]></description>
-                        <expression><![CDATA[$B.age >= 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Département]]></description>
@@ -3795,7 +3795,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Âge de bâtiment]]></description>
-                        <expression><![CDATA[$B.age < 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Département]]></description>
@@ -3809,7 +3809,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Âge de bâtiment]]></description>
-                        <expression><![CDATA[$B.age >= 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Département]]></description>
@@ -3823,7 +3823,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Âge de bâtiment]]></description>
-                        <expression><![CDATA[$B.age < 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Département]]></description>
@@ -3850,7 +3850,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -4035,7 +4035,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -4264,7 +4264,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -4437,7 +4437,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment nouveau ou partie nouvelle de bâtiment]]></description>
-                <expression><![CDATA[$B.age < 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -4494,7 +4494,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
-                        <expression><![CDATA[$B.age >= 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -4504,7 +4504,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Bâtiment neuf]]></description>
-                        <expression><![CDATA[$B.age < 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Département]]></description>
@@ -4518,7 +4518,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Bâtiment neuf]]></description>
-                        <expression><![CDATA[$B.age < 2]]></expression>
+                        <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Département]]></description>
@@ -4545,7 +4545,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -4652,7 +4652,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -4685,7 +4685,7 @@
          <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -4996,7 +4996,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -5049,7 +5049,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -5076,7 +5076,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -5119,7 +5119,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -5802,7 +5802,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -5911,7 +5911,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -6018,7 +6018,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -6689,7 +6689,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -6742,7 +6742,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -7269,7 +7269,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -7302,7 +7302,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -7355,7 +7355,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -7388,7 +7388,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -7431,7 +7431,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -7538,7 +7538,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -7711,7 +7711,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
@@ -7809,7 +7809,7 @@
         <date_debut>2022-08-05</date_debut>
         <secteur>BAR</secteur>
         <sous_secteur>Thermique</sous_secteur>
-        <url>https://www.ecologie.gouv.fr/sites/default/files/BAR-TH-169%20vA46-1%20%C3%A0%20compter%20du%2005-08-2022.pdf</url>
+        <url>https://atee.fr/system/files/2022-09/BAR-TH-169%20vA46-1%20%C3%A0%20compter%20du%2005-08-2022.pdf</url>
         <metropole>true</metropole>
         <outre_mer>true</outre_mer>
         <maison>false</maison>
@@ -7818,7 +7818,7 @@
         <conditions>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
-                <expression><![CDATA[$B.age >= 2]]></expression>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
         </conditions>
         <regles>
