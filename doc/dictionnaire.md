@@ -19,6 +19,7 @@ Ces variables sont construites sur la base des données d'entrée transmises.
 | Code catégorie | Catégorie | Code | Description | Format | Exemple |
 |:--------------:|:---------:|:----:|-------------|--------|:-------:|
 | B | Bâtiment | $B.age | Ancienneté du bâtiment | integer | 10 |
+| B | Bâtiment | $B.anciennete | Ancienneté du bâtiment | NEUF, EXISTANT | EXISTANT |
 | B | Bâtiment | $B.energie_chauffage | Energie de chauffage principale du bâtiment | ELECTRICITE, GAZ_NATUREL, FIOUL, PAC, BOIS, GPL, CHARBON | ELECTRICITE |
 | B | Bâtiment | $B.logements | Nombre de logements | float | 7 |
 | B | Bâtiment | $B.surface_habitable | Surface habitable | float | 100 |
@@ -44,25 +45,24 @@ Ces variables sont construites sur la base des données d'entrée transmises.
 | O | Opération | $O.production_solaire_utile | Production solaire utile (kWh/an) | float | 3500 |
 | O | Opération | $O.puissance_frigorifique | Puissance frigorifique de l'équipement (kW) | float | 1.8 |
 | O | Opération | $O.puissance_nominale | Puissance nominale de l'équipement (kW) | float | 17 |
-| O | Opération | $O.q_chaleur_nette | Chaleur nette unile produite par l'équipement (kWh/an) | float | 25000 |
+| O | Opération | $O.quantite_chaleur_nette | Chaleur nette unile produite par l'équipement (kWh/an) | float | 25000 |
 | O | Opération | $O.quantite | Quantité de travaux | float | 100 |
 | O | Opération | $O.resistance_isolant | Résistance thermique de l'isolant (m2.K/W) | float | 5.5 |
 | O | Opération | $O.scop | Coefficient de performance saisonnier (SCOP) | float | 4.9 |
 | O | Opération | $O.seer | Coefficient d'éfficacité énergétique saisonnier | float | 7 |
 | O | Opération | $O.superficie_capteurs_solaires | Superficie des capteurs solaires installés (m²) | float | 6 |
-| O | Opération | $O.t_fluide | Température du fluide caloporteur (°C) | float | 90 |
+| O | Opération | $O.temperature_fluide | Température du fluide caloporteur (°C) | float | 90 |
 | O | Opération | $O.taux_couverture_ecs | Taux de couverture des besoins annuels d'ECS par l'équipement installée (%) | float | 67.5 |
 | O | Opération | $O.taux_couverture_solaire | Taux de couverture solaire de l'installation | float | 0.8 |
-| O | Opération | $O.type_caisson_vmc_simple_flux | Type de caisson de VMC simple flux | BASSE_CONSOMMATION, STANDARD, BASSE_PRESSION | STANDARD |
+| O | Opération | $O.type_caisson_vmc | Type de caisson de VMC simple flux | BASSE_CONSOMMATION, STANDARD, BASSE_PRESSION | STANDARD |
 | O | Opération | $O.type_cesc | Type de chauffe-eau solaire collectif | CESC, CESCI | CESCI |
 | O | Opération | $O.type_chauffe_bain | Type de chauffe bain | HAUT_RENDEMENT, CONDENSATION | HAUT_RENDEMENT |
 | O | Opération | $O.type_extracteur | Type d'extracteur de ventilation | STANDARD, BASSE_CONSOMMATION | STANDARD |
 | O | Opération | $O.type_installation | Type d'installation | INDIVIDUEL, COLLECTIF | INDIVIDUEL |
 | O | Opération | $O.type_point_singulier | Type de poins singulier | HORS_ECHANGEUR, ECHANGEUR | ECHANGEUR |
 | O | Opération | $O.type_usage | Type d'usage de l'équipement installé | CHAUFFAGE_ECS, ECS | CHAUFFAGE_ECS |
-| O | Opération | $O.type_ventilation_hygroreglable | Type de ventilation hygroréglable | TYPE_A, TYPE_B | TYPE_A |
+| O | Opération | $O.type_vmc_hygroreglable | Type de ventilation hygroréglable | TYPE_A, TYPE_B | TYPE_A |
 | O | Opération | $O.type_vmc_double_flux | Type de VMC double flux | AUTOREGLABLE, MODULE | MODULE |
-| O | Opération | $O.type_vmc_simple_flux | Type de VMC simple flux | TYPE_A, TYPE_B | TYPE_A |
 
 ### Données intermédiaires
 
