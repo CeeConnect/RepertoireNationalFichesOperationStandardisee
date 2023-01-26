@@ -22,7 +22,7 @@
             </condition>
             <condition>
                 <description><![CDATA[Métropole]]></description>
-                <expression><![CDATA[$B.metropole === true]]></expression>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
             </condition>
         </conditions>
         <regles>
@@ -76,6 +76,10 @@
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
+            </condition>
+            <condition>
+                <description><![CDATA[Métropole]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
             </condition>
         </conditions>
         <regles>
@@ -351,6 +355,10 @@
                         <description><![CDATA[Bâtiment existant]]></description>
                         <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
                     </condition>
+                    <condition>
+                        <description><![CDATA[Outre mer]]></description>
+                        <expression><![CDATA[$O.code_departement_outre_mer === true]]></expression>
+                    </condition>
                 </conditions>
             </regle>
             <regle>
@@ -423,6 +431,10 @@
                     <condition>
                         <description><![CDATA[Bâtiment existant]]></description>
                         <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Outre mer]]></description>
+                        <expression><![CDATA[$O.code_departement_outre_mer === true]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Resistance thermique]]></description>
@@ -626,6 +638,10 @@
         <appartement>true</appartement>
         <immeuble>true</immeuble>
         <conditions>
+            <condition>
+                <description><![CDATA[Outre mer]]></description>
+                <expression><![CDATA[$O.code_departement_outre_mer === true]]></expression>
+            </condition>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
@@ -1762,6 +1778,10 @@
         <immeuble>true</immeuble>
         <conditions>
             <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
+            <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
@@ -1815,6 +1835,10 @@
         <immeuble>false</immeuble>
         <conditions>
             <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
+            <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
@@ -1867,6 +1891,10 @@
         <appartement>false</appartement>
         <immeuble>true</immeuble>
         <conditions>
+            <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
@@ -3752,12 +3780,12 @@
                 <expression><![CDATA[5300 * $O.superficie_capteurs_solaires]]></expression>
                 <conditions>
                     <condition>
-                        <description><![CDATA[Âge de bâtiment]]></description>
-                        <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
+                        <description><![CDATA[Outre mer]]></description>
+                        <expression><![CDATA[$O.code_departement_outre_mer === true]]></expression>
                     </condition>
                     <condition>
-                        <description><![CDATA[Département]]></description>
-                        <expression><![CDATA[$O.code_departement === '971' || $O.code_departement === '972' || $O.code_departement === '976']]></expression>
+                        <description><![CDATA[Âge de bâtiment]]></description>
+                        <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -3848,6 +3876,10 @@
         <appartement>true</appartement>
         <immeuble>true</immeuble>
         <conditions>
+            <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
@@ -4033,6 +4065,10 @@
         <appartement>true</appartement>
         <immeuble>true</immeuble>
         <conditions>
+            <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
@@ -4436,6 +4472,10 @@
         <immeuble>true</immeuble>
         <conditions>
             <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
+            <condition>
                 <description><![CDATA[Bâtiment nouveau ou partie nouvelle de bâtiment]]></description>
                 <expression><![CDATA[$B.anciennete === 'NEUF']]></expression>
             </condition>
@@ -4467,6 +4507,12 @@
         <maison>false</maison>
         <appartement>false</appartement>
         <immeuble>true</immeuble>
+        <conditions>
+            <condition>
+                <description><![CDATA[Outre mer]]></description>
+                <expression><![CDATA[$O.code_departement_outre_mer === true]]></expression>
+            </condition>
+        </conditions>
         <regles>
             <regle>
                 <description><![CDATA[Chauffe-eau solaire collectif à appoint individualisé (CESCI)]]></description>
@@ -4683,6 +4729,10 @@
         <appartement>true</appartement>
         <immeuble>false</immeuble>
          <conditions>
+            <condition>
+                <description><![CDATA[Outre mer]]></description>
+                <expression><![CDATA[$O.code_departement_outre_mer === true]]></expression>
+            </condition>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
@@ -4995,6 +5045,10 @@
         <immeuble>false</immeuble>
         <conditions>
             <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
+            <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
@@ -5047,6 +5101,10 @@
         <appartement>false</appartement>
         <immeuble>true</immeuble>
         <conditions>
+            <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
@@ -5800,6 +5858,10 @@
         <appartement>true</appartement>
         <immeuble>true</immeuble>
         <conditions>
+            <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
@@ -6688,6 +6750,10 @@
         <immeuble>true</immeuble>
         <conditions>
             <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
+            <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
@@ -7268,6 +7334,10 @@
         <immeuble>false</immeuble>
         <conditions>
             <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
+            <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
@@ -7353,6 +7423,10 @@
         <appartement>false</appartement>
         <immeuble>false</immeuble>
         <conditions>
+            <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
@@ -7537,6 +7611,10 @@
         <immeuble>false</immeuble>
         <conditions>
             <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
+            <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
             </condition>
@@ -7709,6 +7787,10 @@
         <appartement>false</appartement>
         <immeuble>false</immeuble>
         <conditions>
+            <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
             <condition>
                 <description><![CDATA[Bâtiment existant]]></description>
                 <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
