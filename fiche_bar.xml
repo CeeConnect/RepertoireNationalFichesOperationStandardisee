@@ -1820,6 +1820,117 @@
         </regles>
     </fiche>
     <fiche>
+        <id>BAR-SE-108v48-1</id>
+        <code>BAR-SE-108</code>
+        <nom>Désembouage d’un réseau hydraulique individuel de chauffage</nom>
+        <version>37.1</version>
+        <date_debut>2022-10-14</date_debut>
+        <secteur>BAR</secteur>
+        <sous_secteur>Services</sous_secteur>
+        <url>http://calculateur-cee.ademe.fr/pdf/display/306/BAR-SE-108</url>
+        <metropole>true</metropole>
+        <outre_mer>false</outre_mer>
+        <maison>true</maison>
+        <appartement>true</appartement>
+        <immeuble>false</immeuble>
+        <conditions>
+            <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
+            <condition>
+                <description><![CDATA[Bâtiment existant]]></description>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
+            </condition>
+        </conditions>
+        <regles>
+            <regle>
+                <description><![CDATA[Maison - H1]]></description>
+                <expression><![CDATA[7200]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Type]]></description>
+                        <expression><![CDATA[$B.type === 'MAISON']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Maison - H2]]></description>
+                <expression><![CDATA[6900]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Type]]></description>
+                        <expression><![CDATA[$B.type === 'MAISON']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Maison - H3]]></description>
+                <expression><![CDATA[4800]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Type]]></description>
+                        <expression><![CDATA[$B.type === 'MAISON']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Appartement - H1]]></description>
+                <expression><![CDATA[4700]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Type]]></description>
+                        <expression><![CDATA[$B.type === 'APPARTEMENT']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Appartement - H2]]></description>
+                <expression><![CDATA[4500]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Type]]></description>
+                        <expression><![CDATA[$B.type === 'APPARTEMENT']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Appartement - H3]]></description>
+                <expression><![CDATA[3200]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Type]]></description>
+                        <expression><![CDATA[$B.type === 'APPARTEMENT']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+        </regles>
+    </fiche>
+    <fiche>
         <id>BAR-TH-101v17-1</id>
         <code>BAR-TH-101</code>
         <nom>Chauffe-eau solaire individuel</nom>
@@ -2654,7 +2765,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -2672,7 +2783,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -2690,7 +2801,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -2708,7 +2819,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'COLLECTIF']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'COLLECTIF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -2726,7 +2837,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'COLLECTIF']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'COLLECTIF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -2744,7 +2855,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'COLLECTIF']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'COLLECTIF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3040,7 +3151,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3058,7 +3169,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3076,7 +3187,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3094,7 +3205,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'COLLECTIF']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'COLLECTIF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3112,7 +3223,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'COLLECTIF']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'COLLECTIF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3130,7 +3241,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'COLLECTIF']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'COLLECTIF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3213,7 +3324,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3231,7 +3342,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3249,7 +3360,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3267,7 +3378,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'COLLECTIF']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'COLLECTIF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3285,7 +3396,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'COLLECTIF']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'COLLECTIF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3303,7 +3414,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'COLLECTIF']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'COLLECTIF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3452,7 +3563,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type d'installation de chauffage]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -3474,7 +3585,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type d'installation de chauffage]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -3496,7 +3607,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type d'installation de chauffage]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -3518,7 +3629,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type d'installation de chauffage]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -3540,7 +3651,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type d'installation de chauffage]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -3562,7 +3673,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type d'installation de chauffage]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'INDIVIDUEL']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'INDIVIDUEL']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
@@ -3584,7 +3695,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type d'installation de chauffage]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'COLLECTIF']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'COLLECTIF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3602,7 +3713,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type d'installation de chauffage]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'COLLECTIF']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'COLLECTIF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3620,7 +3731,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Type d'installation de chauffage]]></description>
-                        <expression><![CDATA[$B.type_installation_chauffage === 'COLLECTIF']]></expression>
+                        <expression><![CDATA[$B.installation_chauffage === 'COLLECTIF']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>

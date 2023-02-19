@@ -16,7 +16,7 @@
                         <xs:element name="id">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
-                                    <xs:pattern value="(AGRI|BAR|BAT|IND|RES|TRA)-(BA|CH|EC|EN|EQ|SE|TH|UT)-\d*(-SE)?v\d*\-\d*"/>
+                                    <xs:pattern value="(AGRI|BAR|BAT|IND|RES|TRA)-(BA|CH|EC|EN|EQ|SE|TH|UT)-[0-9]*(-SE)?v[0-9][-][0-9]*"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
@@ -24,7 +24,7 @@
                         <xs:element name="code">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
-                                    <xs:pattern value="(AGRI|BAR|BAT|IND|RES|TRA)+-+(BA|CH|EC|EN|EQ|SE|TH|UT)+-+\d*(-+SE)?"/>
+                                    <xs:pattern value="(AGRI|BAR|BAT|IND|RES|TRA)[-](BA|CH|EC|EN|EQ|SE|TH|UT)[-][0-9]*([-]SE)?"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
@@ -85,10 +85,27 @@
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
+                        <!-- Durée de vie conventionnelle -->
+                        <xs:element name="duree">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="0"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
                         <!-- Url d'accès à la fiche -->
                         <xs:element name="url">
                             <xs:simpleType>
                                 <xs:restriction base="xs:anyURI"></xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- Champs d'application - Natures du bénéficiaire -->
+                        <xs:element name="beneficiaire_natures" minOccurs="0" maxOccurs="2">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="PERSONNE_MORALE"/>
+                                    <xs:enumeration value="PERSONNE_PHYSIQUE"/>
+                                </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
                         <!-- Zone d'application - Métropole -->

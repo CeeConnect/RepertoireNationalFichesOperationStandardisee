@@ -24,7 +24,7 @@ Ces variables sont construites sur la base des données d'entrée transmises.
 | B | Bâtiment | $B.logements | Nombre de logements | float | 7 |
 | B | Bâtiment | $B.surface_habitable | Surface habitable | float | 100 |
 | B | Bâtiment | $B.type | Type de bâtiment | MAISON, APPARTEMENT, IMMEUBLE | MAISON |
-| B | Bâtiment | $B.type_installation_chauffage | Type d'installation de chauffage | INDIVIDUEL, COLLECTIF | INDIVIDUEL |
+| B | Bâtiment | $B.installation_chauffage | Type d'installation de chauffage | INDIVIDUEL, COLLECTIF | INDIVIDUEL |
 | O | Opération | $O.besoin_annuel_ecs | Besoin annuel en eau chaude sanitaire à produire par l’énergie solaire exprimé (kW) | float | 12000 |
 | O | Opération | $O.cef_initial | Consommation conventionnelle initiale (kWh/m²/an) | float | 450 |
 | O | Opération | $O.cef_projet | Consommation conventionnelle après travaux (kWh/m²/an) | float | 150 |

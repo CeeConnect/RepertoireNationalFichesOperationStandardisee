@@ -16,7 +16,7 @@
                         <xs:element name="id">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
-                                    <xs:pattern value="(ZNI|GPE-ZNI|ETS|CPE|GPE|CFT|CRC|CRM|CTH|CDP)(-(AGRI|BAR|BAT|IND|RES|TRA)+-+(BA|CH|EC|EN|EQ|SE|TH|UT)+-+\d*(-+SE)?)?v[0-9]*(-[0-9]*)?"/>
+                                    <xs:pattern value="(ZNI|GPE-ZNI|ETS|CPE|GPE|CFT|CRC|CRM|CTH|CDP)([-](AGRI|BAR|BAT|IND|RES|TRA)[-](BA|CH|EC|EN|EQ|SE|TH|UT)[-][0-9]*([-]SE)?)?v[0-9]*([-][0-9]*)?"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
