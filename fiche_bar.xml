@@ -5146,9 +5146,67 @@
         <nom>Système solaire combiné</nom>
         <version>25.1</version>
         <date_debut>2022-01-01</date_debut>
+        <date_fin>2023-02-28</date_fin>
         <secteur>BAR</secteur>
         <sous_secteur>Thermique</sous_secteur>
         <url>http://calculateur-cee.ademe.fr/pdf/display/190/BAR-TH-143</url>
+        <metropole>true</metropole>
+        <outre_mer>false</outre_mer>
+        <maison>true</maison>
+        <appartement>false</appartement>
+        <immeuble>false</immeuble>
+        <conditions>
+            <condition>
+                <description><![CDATA[France métropolitaine]]></description>
+                <expression><![CDATA[$O.code_departement_metropole === true]]></expression>
+            </condition>
+            <condition>
+                <description><![CDATA[Bâtiment existant]]></description>
+                <expression><![CDATA[$B.anciennete === 'EXISTANT']]></expression>
+            </condition>
+        </conditions>
+        <regles>
+            <regle>
+                <description><![CDATA[H1]]></description>
+                <expression><![CDATA[134800]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[H1]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[H2]]></description>
+                <expression><![CDATA[121000]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[H2]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[H3]]></description>
+                <expression><![CDATA[100500]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[H3]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+        </regles>
+    </fiche>
+    <fiche>
+        <id>BAR-TH-143v51-5</id>
+        <code>BAR-TH-143</code>
+        <nom>Système solaire combiné</nom>
+        <version>51.5</version>
+        <date_debut>2023-03-01</date_debut>
+        <secteur>BAR</secteur>
+        <sous_secteur>Thermique</sous_secteur>
+        <url>http://calculateur-cee.ademe.fr/pdf/display/317/BAR-TH-143</url>
         <metropole>true</metropole>
         <outre_mer>false</outre_mer>
         <maison>true</maison>
