@@ -746,57 +746,57 @@
         <regles>
             <regle>
                 <description><![CDATA[IK = 10]]></description>
-                <expression><![CDATA[1200 * $O.luminaire_[x]_quantite]]></expression>
+                <expression><![CDATA[1200 * $O.luminaires_[x]_quantite]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Indice IK]]></description>
-                        <expression><![CDATA[$O.luminaire_[x]_indice_ik === 10]]></expression>
+                        <expression><![CDATA[$O.luminaires_[x]_indice_ik === 10]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Détecteurs]]></description>
-                        <expression><![CDATA[$O.luminaire_[x]_detecteur_presence === false || $O.luminaire_[x]_detecteur_lumiere === false]]></expression>
+                        <expression><![CDATA[$O.luminaires_[x]_detecteur_presence === false || $O.luminaires_[x]_detecteur_lumiere === false]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
                 <description><![CDATA[IK = 10]]></description>
-                <expression><![CDATA[1600 * $O.luminaire_[x]_quantite]]></expression>
+                <expression><![CDATA[1600 * $O.luminaires_[x]_quantite]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Indice IK]]></description>
-                        <expression><![CDATA[$O.luminaire_[x]_indice_ik === 10]]></expression>
+                        <expression><![CDATA[$O.luminaires_[x]_indice_ik === 10]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Détecteurs]]></description>
-                        <expression><![CDATA[$O.luminaire_[x]_detecteur_presence === true && $O.luminaire_[x]_detecteur_lumiere === true]]></expression>
+                        <expression><![CDATA[$O.luminaires_[x]_detecteur_presence === true && $O.luminaires_[x]_detecteur_lumiere === true]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
                 <description><![CDATA[IK < 10]]></description>
-                <expression><![CDATA[1500 * $O.luminaire_[x]_quantite]]></expression>
+                <expression><![CDATA[1500 * $O.luminaires_[x]_quantite]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Indice IK]]></description>
-                        <expression><![CDATA[$O.luminaire_[x]_indice_ik < 10]]></expression>
+                        <expression><![CDATA[$O.luminaires_[x]_indice_ik < 10]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Détecteurs]]></description>
-                        <expression><![CDATA[$O.luminaire_[x]_detecteur_presence === false || $O.luminaire_[x]_detecteur_lumiere === false]]></expression>
+                        <expression><![CDATA[$O.luminaires_[x]_detecteur_presence === false || $O.luminaires_[x]_detecteur_lumiere === false]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
                 <description><![CDATA[IK < 10]]></description>
-                <expression><![CDATA[1900 * $O.luminaire_[x]_quantite]]></expression>
+                <expression><![CDATA[1900 * $O.luminaires_[x]_quantite]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Indice IK]]></description>
-                        <expression><![CDATA[$O.luminaire_[x]_indice_ik < 10]]></expression>
+                        <expression><![CDATA[$O.luminaires_[x]_indice_ik < 10]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Détecteurs]]></description>
-                        <expression><![CDATA[$O.luminaire_[x]_detecteur_presence === true && $O.luminaire_[x]_detecteur_lumiere === true]]></expression>
+                        <expression><![CDATA[$O.luminaires_[x]_detecteur_presence === true && $O.luminaires_[x]_detecteur_lumiere === true]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -4860,11 +4860,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.05']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.05']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 5.1 && $O.equipement_[x]_seer <= 5.6]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 5.1 && $O.climatiseurs_[x]_seer <= 5.6]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -4878,11 +4878,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.05']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.05']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 5.6 && $O.equipement_[x]_seer <= 6.1]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 5.6 && $O.climatiseurs_[x]_seer <= 6.1]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -4896,11 +4896,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.05']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.05']]></expression>
                     </condition>
                     <condition>
                        <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 6.1 && $O.equipement_[x]_seer <= 8.5]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 6.1 && $O.climatiseurs_[x]_seer <= 8.5]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -4914,11 +4914,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.05']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.05']]></expression>
                     </condition>
                     <condition>
                        <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 8.5]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 8.5]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -4932,11 +4932,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.64']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.64']]></expression>
                     </condition>
                     <condition>
                       <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                      <expression><![CDATA[$O.equipement_[x]_seer >= 5.1 && $O.equipement_[x]_seer <= 5.6]]></expression>
+                      <expression><![CDATA[$O.climatiseurs_[x]_seer >= 5.1 && $O.climatiseurs_[x]_seer <= 5.6]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -4950,11 +4950,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.64']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.64']]></expression>
                     </condition>
                     <condition>
                       <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                      <expression><![CDATA[$O.equipement_[x]_seer >= 5.6 && $O.equipement_[x]_seer <= 6.1]]></expression>
+                      <expression><![CDATA[$O.climatiseurs_[x]_seer >= 5.6 && $O.climatiseurs_[x]_seer <= 6.1]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -4968,11 +4968,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.64']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.64']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 6.1 && $O.equipement_[x]_seer <= 8.5]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 6.1 && $O.climatiseurs_[x]_seer <= 8.5]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -4986,7 +4986,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.64']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.64']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
@@ -5004,11 +5004,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.05']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.05']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 5.1 && $O.equipement_[x]_seer <= 5.6]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 5.1 && $O.climatiseurs_[x]_seer <= 5.6]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -5022,11 +5022,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.05']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.05']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 5.6 && $O.equipement_[x]_seer <= 6.1]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 5.6 && $O.climatiseurs_[x]_seer <= 6.1]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -5040,11 +5040,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.05']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.05']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 6.1 && $O.equipement_[x]_seer <= 8.5]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 6.1 && $O.climatiseurs_[x]_seer <= 8.5]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -5058,11 +5058,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.05']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.05']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 8.5]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 8.5]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -5076,11 +5076,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.64']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.64']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 5.1 && $O.equipement_[x]_seer <= 5.6]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 5.1 && $O.climatiseurs_[x]_seer <= 5.6]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -5094,11 +5094,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.64']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.64']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 5.6 && $O.equipement_[x]_seer <= 6.1]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 5.6 && $O.climatiseurs_[x]_seer <= 6.1]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -5112,11 +5112,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.64']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.64']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 6.1 && $O.equipement_[x]_seer <= 8.5]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 6.1 && $O.climatiseurs_[x]_seer <= 8.5]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -5130,11 +5130,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Puissance frigorifique]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_puissance_frigorifique === '2.64']]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_puissance_frigorifique === '2.64']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient d'éfficacité énergétique saisonnier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_seer >= 8.5]]></expression>
+                        <expression><![CDATA[$O.climatiseurs_[x]_seer >= 8.5]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -7719,11 +7719,11 @@
         <regles>
             <regle>
                 <description><![CDATA[Hors échangeur à plaque - 20 ≤ DN ≤ 65 - 50°C ≤ Tfluide ≤ 120°C - H1]]></description>
-                <expression><![CDATA[11700 * $O.equipement_[x]_quantite]]></expression>
+                <expression><![CDATA[11700 * $O.housses_[x]_quantite]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7731,21 +7731,21 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal >= 20 && $O.equipement_[x]_diametre_nominal <= 65]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal >= 20 && $O.housses_[x]_diametre_nominal <= 65]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide >= 50 && $O.equipement_[x]_temperature_fluide <= 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide >= 50 && $O.housses_[x]_temperature_fluide <= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
                 <description><![CDATA[Hors échangeur à plaque - 20 ≤ DN ≤ 65 - 50°C ≤ Tfluide ≤ 120°C - H2]]></description>
-                <expression><![CDATA[10500 * $O.equipement_[x]_quantite]]></expression>
+                <expression><![CDATA[10500 * $O.housses_[x]_quantite]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7753,11 +7753,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal >= 20 && $O.equipement_[x]_diametre_nominal <= 65]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal >= 20 && $O.housses_[x]_diametre_nominal <= 65]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide >= 50 && $O.equipement_[x]_temperature_fluide <= 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide >= 50 && $O.housses_[x]_temperature_fluide <= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -7767,7 +7767,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7775,11 +7775,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal >= 20 && $O.equipement_[x]_diametre_nominal <= 65]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal >= 20 && $O.housses_[x]_diametre_nominal <= 65]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide >= 50 && $O.equipement_[x]_temperature_fluide <= 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide >= 50 && $O.housses_[x]_temperature_fluide <= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -7789,7 +7789,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7797,11 +7797,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal >= 65 && $O.equipement_[x]_diametre_nominal <= 100]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal >= 65 && $O.housses_[x]_diametre_nominal <= 100]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide >= 50 && $O.equipement_[x]_temperature_fluide <= 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide >= 50 && $O.housses_[x]_temperature_fluide <= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -7811,7 +7811,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7819,11 +7819,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal >= 65 && $O.equipement_[x]_diametre_nominal <= 100]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal >= 65 && $O.housses_[x]_diametre_nominal <= 100]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide >= 50 && $O.equipement_[x]_temperature_fluide <= 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide >= 50 && $O.housses_[x]_temperature_fluide <= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -7833,7 +7833,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7841,11 +7841,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal >= 65 && $O.equipement_[x]_diametre_nominal <= 100]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal >= 65 && $O.housses_[x]_diametre_nominal <= 100]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide >= 50 && $O.equipement_[x]_temperature_fluide <= 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide >= 50 && $O.housses_[x]_temperature_fluide <= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -7855,7 +7855,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7863,11 +7863,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal > 100]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal > 100]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide >= 50 && $O.equipement_[x]_temperature_fluide <= 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide >= 50 && $O.housses_[x]_temperature_fluide <= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -7877,7 +7877,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7885,11 +7885,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal > 100]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal > 100]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide >= 50 && $O.equipement_[x]_temperature_fluide <= 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide >= 50 && $O.housses_[x]_temperature_fluide <= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -7899,7 +7899,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7907,11 +7907,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal > 100]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal > 100]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide >= 50 && $O.equipement_[x]_temperature_fluide <= 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide >= 50 && $O.housses_[x]_temperature_fluide <= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -7921,7 +7921,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7929,11 +7929,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal >= 20 && $O.equipement_[x]_diametre_nominal <= 65]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal >= 20 && $O.housses_[x]_diametre_nominal <= 65]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide > 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide > 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -7943,7 +7943,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7951,11 +7951,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal >= 20 && $O.equipement_[x]_diametre_nominal <= 65]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal >= 20 && $O.housses_[x]_diametre_nominal <= 65]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide > 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide > 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -7965,7 +7965,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7973,11 +7973,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal >= 20 && $O.equipement_[x]_diametre_nominal <= 65]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal >= 20 && $O.housses_[x]_diametre_nominal <= 65]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide > 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide > 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -7987,7 +7987,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -7995,11 +7995,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal >= 65 && $O.equipement_[x]_diametre_nominal <= 100]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal >= 65 && $O.housses_[x]_diametre_nominal <= 100]]></expression>
                     </condition>
                      <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide > 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide > 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8009,7 +8009,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8017,11 +8017,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal >= 65 && $O.equipement_[x]_diametre_nominal <= 100]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal >= 65 && $O.housses_[x]_diametre_nominal <= 100]]></expression>
                     </condition>
                      <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide > 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide > 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8031,7 +8031,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8039,11 +8039,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal >= 65 && $O.equipement_[x]_diametre_nominal <= 100]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal >= 65 && $O.housses_[x]_diametre_nominal <= 100]]></expression>
                     </condition>
                      <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide > 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide > 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8053,7 +8053,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8061,11 +8061,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal > 100]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal > 100]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide > 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide > 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8075,7 +8075,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8083,11 +8083,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal > 100]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal > 100]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide > 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide > 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8097,7 +8097,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'HORS_ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8105,11 +8105,11 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Diamètre nominal de la canalisation]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_diametre_nominal > 100]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_diametre_nominal > 100]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide > 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide > 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8119,7 +8119,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8127,7 +8127,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide >= 50 && $O.equipement_[x]_temperature_fluide <= 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide >= 50 && $O.housses_[x]_temperature_fluide <= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8137,7 +8137,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8145,7 +8145,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide >= 50 && $O.equipement_[x]_temperature_fluide <= 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide >= 50 && $O.housses_[x]_temperature_fluide <= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8155,7 +8155,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8163,7 +8163,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide >= 50 && $O.equipement_[x]_temperature_fluide <= 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide >= 50 && $O.housses_[x]_temperature_fluide <= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8173,7 +8173,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8181,7 +8181,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide > 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide > 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8191,7 +8191,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8199,7 +8199,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide > 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide > 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8209,7 +8209,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de point singulier]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_type_point_singulier === 'ECHANGEUR']]></expression>
+                        <expression><![CDATA[$O.housses_[x]_type_point_singulier === 'ECHANGEUR']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8217,7 +8217,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Températude du fluide caloporteur]]></description>
-                        <expression><![CDATA[$O.equipement_[x]_temperature_fluide > 120]]></expression>
+                        <expression><![CDATA[$O.housses_[x]_temperature_fluide > 120]]></expression>
                     </condition>
                 </conditions>
             </regle>

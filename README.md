@@ -113,7 +113,7 @@ Liste des opérateurs de comparaison :
 
 Certains fiches d'opération standardisée déterminent le montant des certificats d'économies d'énergie sur la base de valeurs itérables, c'est à dire de plusieurs types d'élément éligible. Par exemple la fiche BAR-EQ-110 - Luminaire à modules LED avec dispositif de contrôle pour les parties communes, prévoit des valorisations CEE différentes **cumulatives** selon l'indice de protection aux chocs et/ou la présence d'un dispositif de contrôle intégré au luminaire.
 
-Ces cas de figure sont couverts par le recours aux variables iterables, dont la nomenclature respecte le format suivant : **$O.mon_iterable_[x]_ma_variable**.
+Ces cas de figure sont couverts par le recours aux variables iterables, dont la nomenclature respecte le format suivant : **$O.elements_[x]_ma_variable**.
 
 Liste non exhaustive des fiches d'opération standardisée concernées :
 
