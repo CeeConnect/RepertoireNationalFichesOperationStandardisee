@@ -2107,7 +2107,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas >= 102 && $O.etas < 110]]></expression>
+                        <expression><![CDATA[$O.etas >= 110 && $O.etas < 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -2125,7 +2125,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas >= 102 && $O.etas < 110]]></expression>
+                        <expression><![CDATA[$O.etas >= 110 && $O.etas < 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -2143,7 +2143,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas >= 102 && $O.etas < 110]]></expression>
+                        <expression><![CDATA[$O.etas >= 110 && $O.etas < 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -2161,7 +2161,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas >= 102 && $O.etas < 110]]></expression>
+                        <expression><![CDATA[$O.etas >= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -2179,7 +2179,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas >= 102 && $O.etas < 110]]></expression>
+                        <expression><![CDATA[$O.etas >= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -2197,7 +2197,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas >= 102 && $O.etas < 110]]></expression>
+                        <expression><![CDATA[$O.etas >= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -2269,7 +2269,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas >= 102 && $O.etas < 110]]></expression>
+                        <expression><![CDATA[$O.etas >= 110 && $O.etas < 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -2287,7 +2287,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas >= 102 && $O.etas < 110]]></expression>
+                        <expression><![CDATA[$O.etas >= 110 && $O.etas < 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -2305,7 +2305,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas >= 102 && $O.etas < 110]]></expression>
+                        <expression><![CDATA[$O.etas >= 110 && $O.etas < 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -2323,7 +2323,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas >= 102 && $O.etas < 110]]></expression>
+                        <expression><![CDATA[$O.etas >= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -2341,7 +2341,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas >= 102 && $O.etas < 110]]></expression>
+                        <expression><![CDATA[$O.etas >= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -2359,7 +2359,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas >= 102 && $O.etas < 110]]></expression>
+                        <expression><![CDATA[$O.etas >= 120]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -3095,7 +3095,7 @@
         <regles>
             <regle>
                 <description><![CDATA[Maison - H1]]></description>
-                <expression><![CDATA[300 * $O.quantite * $O.surface_chauffee]]></expression>
+                <expression><![CDATA[300 * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3109,7 +3109,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H2]]></description>
-                <expression><![CDATA[250 * $O.quantite * $O.surface_chauffee]]></expression>
+                <expression><![CDATA[250 * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3123,7 +3123,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H3]]></description>
-                <expression><![CDATA[160 * $O.quantite * $O.surface_chauffee]]></expression>
+                <expression><![CDATA[160 * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3137,7 +3137,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - Chauffage individuel - H1]]></description>
-                <expression><![CDATA[210 * $O.quantite * $O.surface_chauffee]]></expression>
+                <expression><![CDATA[210 * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3155,7 +3155,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - Chauffage individuel - H2]]></description>
-                <expression><![CDATA[170 * $O.quantite * $O.surface_chauffee]]></expression>
+                <expression><![CDATA[170 * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3173,7 +3173,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - Chauffage individuel - H3]]></description>
-                <expression><![CDATA[110 * $O.quantite * $O.surface_chauffee]]></expression>
+                <expression><![CDATA[110 * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3191,7 +3191,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - Chauffage collectif - H1]]></description>
-                <expression><![CDATA[280 * $O.quantite * $O.surface_chauffee]]></expression>
+                <expression><![CDATA[280 * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3209,7 +3209,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - Chauffage collectif - H2]]></description>
-                <expression><![CDATA[230 * $O.quantite * $O.surface_chauffee]]></expression>
+                <expression><![CDATA[230 * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3227,7 +3227,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - Chauffage collectif - H3]]></description>
-                <expression><![CDATA[150 * $O.quantite * $O.surface_chauffee]]></expression>
+                <expression><![CDATA[150 * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3441,7 +3441,7 @@
         <regles>
             <regle>
                 <description><![CDATA[Maison - Electricité - H1]]></description>
-                <expression><![CDATA[11600 * $B.facteur_correctif_sch_7]]></expression>
+                <expression><![CDATA[11600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3459,7 +3459,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - Electricité - H2]]></description>
-                <expression><![CDATA[9500 * $B.facteur_correctif_sch_7]]></expression>
+                <expression><![CDATA[9500 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3477,7 +3477,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - Electricité - H3]]></description>
-                <expression><![CDATA[6300 * $B.facteur_correctif_sch_7]]></expression>
+                <expression><![CDATA[6300 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3495,7 +3495,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - Combustible - H1]]></description>
-                <expression><![CDATA[14200 * $B.facteur_correctif_sch_7]]></expression>
+                <expression><![CDATA[14200 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3513,7 +3513,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - Combustible - H2]]></description>
-                <expression><![CDATA[11600 * $B.facteur_correctif_sch_7]]></expression>
+                <expression><![CDATA[11600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3531,7 +3531,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - Combustible - H3]]></description>
-                <expression><![CDATA[7700 * $B.facteur_correctif_sch_7]]></expression>
+                <expression><![CDATA[7700 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -4778,7 +4778,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Immeuble]]></description>
-                        <expression><![CDATA[$B.type === 'IMMEUBLE']]></expression>
+                        <expression><![CDATA[$B.type === 'MAISON']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[H1]]></description>
@@ -4792,7 +4792,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Immeuble]]></description>
-                        <expression><![CDATA[$B.type === 'IMMEUBLE']]></expression>
+                        <expression><![CDATA[$B.type === 'MAISON']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[H2]]></description>
@@ -4806,7 +4806,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Immeuble]]></description>
-                        <expression><![CDATA[$B.type === 'IMMEUBLE']]></expression>
+                        <expression><![CDATA[$B.type === 'MAISON']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[H3]]></description>
@@ -8695,7 +8695,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[type de chauffe bain]]></description>
-                        <expression><![CDATA[$O.type_chauffe_bain === 'HAUT_RENDEMENT']]></expression>
+                        <expression><![CDATA[$O.type_chauffe_bain === 'FLUX_FORCE_HAUT_RENDEMENT']]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8713,7 +8713,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[type de chauffe bain]]></description>
-                        <expression><![CDATA[$O.type_chauffe_bain === 'HAUT_RENDEMENT']]></expression>
+                        <expression><![CDATA[$O.type_chauffe_bain === 'FLUX_FORCE_HAUT_RENDEMENT']]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8731,7 +8731,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[type de chauffe bain]]></description>
-                        <expression><![CDATA[$O.type_chauffe_bain === 'HAUT_RENDEMENT']]></expression>
+                        <expression><![CDATA[$O.type_chauffe_bain === 'FLUX_FORCE_HAUT_RENDEMENT']]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -8790,12 +8790,12 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1]]></description>
+                <description><![CDATA[Logement collectif - H1]]></description>
                 <expression><![CDATA[32000]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type === 'APPARTEMENT']]></expression>
+                        <expression><![CDATA[$B.type === 'APPARTEMENT' || $B.type === 'IMMEUBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8804,12 +8804,12 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2]]></description>
+                <description><![CDATA[Logement collectif - H2]]></description>
                 <expression><![CDATA[28500]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type === 'APPARTEMENT']]></expression>
+                        <expression><![CDATA[$B.type === 'APPARTEMENT' || $B.type === 'IMMEUBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8818,12 +8818,12 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3]]></description>
+                <description><![CDATA[Logement collectif - H3]]></description>
                 <expression><![CDATA[23500]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type === 'APPARTEMENT']]></expression>
+                        <expression><![CDATA[$B.type === 'APPARTEMENT' || $B.type === 'IMMEUBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
