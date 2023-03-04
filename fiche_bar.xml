@@ -8967,7 +8967,7 @@
         <regles>
             <regle>
                 <description><![CDATA[2.8 <= COP < 3.2 - H1]]></description>
-                <expression><![CDATA[33800 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[33800 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8981,7 +8981,7 @@
             </regle>
             <regle>
                 <description><![CDATA[2.8 <= COP < 3.2 - H2]]></description>
-                <expression><![CDATA[32500 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[32500 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8995,7 +8995,7 @@
             </regle>
             <regle>
                 <description><![CDATA[2.8 <= COP < 3.2 - H3]]></description>
-                <expression><![CDATA[29600 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[29600 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9009,7 +9009,7 @@
             </regle>
             <regle>
                 <description><![CDATA[3.2 <= COP < 3.6 - H1]]></description>
-                <expression><![CDATA[38900 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[38900 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9023,7 +9023,7 @@
             </regle>
             <regle>
                 <description><![CDATA[3.2 <= COP < 3.6 - H2]]></description>
-                <expression><![CDATA[37400 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[37400 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9037,7 +9037,7 @@
             </regle>
             <regle>
                 <description><![CDATA[3.2 <= COP < 3.6 - H3]]></description>
-                <expression><![CDATA[34000 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[34000 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9051,7 +9051,7 @@
             </regle>
             <regle>
                 <description><![CDATA[3.6 <= COP < 4 - H1]]></description>
-                <expression><![CDATA[42800 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[42800 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9065,7 +9065,7 @@
             </regle>
             <regle>
                 <description><![CDATA[3.6 <= COP < 4 - H2]]></description>
-                <expression><![CDATA[41200 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[41200 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9079,7 +9079,7 @@
             </regle>
             <regle>
                 <description><![CDATA[3.6 <= COP < 4 - H3]]></description>
-                <expression><![CDATA[37500 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[37500 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9093,7 +9093,7 @@
             </regle>
             <regle>
                 <description><![CDATA[4 <= COP < 4.4 - H1]]></description>
-                <expression><![CDATA[46000 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[46000 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9107,7 +9107,7 @@
             </regle>
             <regle>
                 <description><![CDATA[4 <= COP < 4.4 - H2]]></description>
-                <expression><![CDATA[44200 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[44200 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9121,7 +9121,7 @@
             </regle>
             <regle>
                 <description><![CDATA[4 <= COP < 4.4 - H3]]></description>
-                <expression><![CDATA[40300 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[40300 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9135,7 +9135,7 @@
             </regle>
             <regle>
                 <description><![CDATA[4.4 <= COP < 4.8 - H1]]></description>
-                <expression><![CDATA[48600 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[48600 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9149,7 +9149,7 @@
             </regle>
             <regle>
                 <description><![CDATA[4.4 <= COP < 4.8 - H2]]></description>
-                <expression><![CDATA[46700 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[46700 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9163,7 +9163,7 @@
             </regle>
             <regle>
                 <description><![CDATA[4.4 <= COP < 4.8 - H3]]></description>
-                <expression><![CDATA[42500 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[42500 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9177,7 +9177,7 @@
             </regle>
             <regle>
                 <description><![CDATA[COP >= 4.8 - H1]]></description>
-                <expression><![CDATA[50700 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[50700 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9191,7 +9191,7 @@
             </regle>
             <regle>
                 <description><![CDATA[COP >= 4.8 - H2]]></description>
-                <expression><![CDATA[48800 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[48800 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -9205,7 +9205,7 @@
             </regle>
             <regle>
                 <description><![CDATA[COP >= 4.8 - H3]]></description>
-                <expression><![CDATA[44400 * $O.logements * $O.taux_couverture_ecs]]></expression>
+                <expression><![CDATA[44400 * $O.logements * ($O.taux_couverture_ecs / 100)]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
