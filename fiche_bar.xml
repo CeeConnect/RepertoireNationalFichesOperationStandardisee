@@ -421,7 +421,7 @@
         <immeuble>true</immeuble>
         <regles>
             <regle>
-                <description><![CDATA[Maison individuelle - Logement existant - 0.5 ≤ R < 1.2]]></description>
+                <description><![CDATA[Maison individuelle - Logement existant - 0.5 <= R < 1.2]]></description>
                 <expression><![CDATA[200 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -443,7 +443,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison individuelle - Logement existant - 1.2 ≤ R]]></description>
+                <description><![CDATA[Maison individuelle - Logement existant - 1.2 <= R]]></description>
                 <expression><![CDATA[240 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -461,7 +461,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison individuelle - Logement neuf - 0.5 ≤ R < 1.2]]></description>
+                <description><![CDATA[Maison individuelle - Logement neuf - 0.5 <= R < 1.2]]></description>
                 <expression><![CDATA[130 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -479,7 +479,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison individuelle - Logement neuf - 1.2 ≤ R]]></description>
+                <description><![CDATA[Maison individuelle - Logement neuf - 1.2 <= R]]></description>
                 <expression><![CDATA[150 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -497,7 +497,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Immeuble - Logement existant - 0.5 ≤ R < 1.2]]></description>
+                <description><![CDATA[Immeuble - Logement existant - 0.5 <= R < 1.2]]></description>
                 <expression><![CDATA[240 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -515,7 +515,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Immeuble - Logement existant - 1.2 ≤ R]]></description>
+                <description><![CDATA[Immeuble - Logement existant - 1.2 <= R]]></description>
                 <expression><![CDATA[280 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -533,7 +533,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Immeuble - Logement neuf - 0.5 ≤ R < 1.2]]></description>
+                <description><![CDATA[Immeuble - Logement neuf - 0.5 <= R < 1.2]]></description>
                 <expression><![CDATA[160 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -551,7 +551,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Immeuble - Logement neuf - 1.2 ≤ R]]></description>
+                <description><![CDATA[Immeuble - Logement neuf - 1.2 <= R]]></description>
                 <expression><![CDATA[180 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -2015,12 +2015,6 @@
             <regle>
                 <description><![CDATA[Montant forfaitaire]]></description>
                 <expression><![CDATA[$O.besoin_annuel_ecs * ($O.production_solaire_utile / $O.besoin_annuel_ecs) * 0.196]]></expression>
-                <conditions>
-                    <condition>
-                        <description><![CDATA[Zone climatique]]></description>
-                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
-                    </condition>
-                </conditions>
             </regle>
         </regles>
     </fiche>
@@ -2046,7 +2040,7 @@
         </conditions>
         <regles>
             <regle>
-                <description><![CDATA[Maison - H1 - 102% ≤ ηs <110%]]></description>
+                <description><![CDATA[Maison - H1 - 102% <= ηs <110%]]></description>
                 <expression><![CDATA[52700 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -2064,7 +2058,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 102% ≤ ηs <110%]]></description>
+                <description><![CDATA[Maison - H2 - 102% <= ηs <110%]]></description>
                 <expression><![CDATA[43100 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -2082,7 +2076,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 102% ≤ ηs <110%]]></description>
+                <description><![CDATA[Maison - H3 - 102% <= ηs <110%]]></description>
                 <expression><![CDATA[28700 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -2100,7 +2094,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H1 - 110% ≤ ηs <120%]]></description>
+                <description><![CDATA[Maison - H1 - 110% <= ηs <120%]]></description>
                 <expression><![CDATA[66400 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -2118,7 +2112,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 110% ≤ ηs <120%]]></description>
+                <description><![CDATA[Maison - H2 - 110% <= ηs <120%]]></description>
                 <expression><![CDATA[54400 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -2136,7 +2130,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 110% ≤ ηs <120%]]></description>
+                <description><![CDATA[Maison - H3 - 110% <= ηs <120%]]></description>
                 <expression><![CDATA[36200 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -2154,7 +2148,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H1 - 120% ≤ ηs]]></description>
+                <description><![CDATA[Maison - H1 - 120% <= ηs]]></description>
                 <expression><![CDATA[79900 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -2172,7 +2166,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 120% ≤ ηs]]></description>
+                <description><![CDATA[Maison - H2 - 120% <= ηs]]></description>
                 <expression><![CDATA[65400 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -2190,7 +2184,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 120% ≤ ηs]]></description>
+                <description><![CDATA[Maison - H3 - 120% <= ηs]]></description>
                 <expression><![CDATA[43600 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -2208,7 +2202,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - 102% ≤ ηs <110%]]></description>
+                <description><![CDATA[Appartement - H1 - 102% <= ηs <110%]]></description>
                 <expression><![CDATA[24500 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -2226,7 +2220,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - 102% ≤ ηs <110%]]></description>
+                <description><![CDATA[Appartement - H2 - 102% <= ηs <110%]]></description>
                 <expression><![CDATA[20100 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -2244,7 +2238,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - 102% ≤ ηs <110%]]></description>
+                <description><![CDATA[Appartement - H3 - 102% <= ηs <110%]]></description>
                 <expression><![CDATA[13400 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -2262,7 +2256,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - 110% ≤ ηs <120%]]></description>
+                <description><![CDATA[Appartement - H1 - 110% <= ηs <120%]]></description>
                 <expression><![CDATA[32200 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -2280,7 +2274,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - 110% ≤ ηs <120%]]></description>
+                <description><![CDATA[Appartement - H2 - 110% <= ηs <120%]]></description>
                 <expression><![CDATA[26400 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -2298,7 +2292,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - 110% ≤ ηs <120%]]></description>
+                <description><![CDATA[Appartement - H3 - 110% <= ηs <120%]]></description>
                 <expression><![CDATA[17600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -2316,7 +2310,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - 120% ≤ ηs]]></description>
+                <description><![CDATA[Appartement - H1 - 120% <= ηs]]></description>
                 <expression><![CDATA[39700 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -2334,7 +2328,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - 120% ≤ ηs]]></description>
+                <description><![CDATA[Appartement - H2 - 120% <= ηs]]></description>
                 <expression><![CDATA[32500 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -2352,7 +2346,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - 120% ≤ ηs]]></description>
+                <description><![CDATA[Appartement - H3 - 120% <= ηs]]></description>
                 <expression><![CDATA[21700 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -2500,7 +2494,7 @@
         </conditions>
         <regles>
             <regle>
-                <description><![CDATA[H1 - P ≤ 400 kW]]></description>
+                <description><![CDATA[H1 - P <= 400 kW]]></description>
                 <expression><![CDATA[47500 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -2514,7 +2508,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[H2 - P ≤ 400 kW]]></description>
+                <description><![CDATA[H2 - P <= 400 kW]]></description>
                 <expression><![CDATA[40900 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -2528,7 +2522,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[H3 - P ≤ 400 kW]]></description>
+                <description><![CDATA[H3 - P <= 400 kW]]></description>
                 <expression><![CDATA[30500 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -3101,7 +3095,7 @@
         <regles>
             <regle>
                 <description><![CDATA[Maison - H1]]></description>
-                <expression><![CDATA[300 * $O.quantite]]></expression>
+                <expression><![CDATA[300 * $O.quantite * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3115,7 +3109,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H2]]></description>
-                <expression><![CDATA[250 * $O.quantite]]></expression>
+                <expression><![CDATA[250 * $O.quantite * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3129,7 +3123,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Maison - H3]]></description>
-                <expression><![CDATA[160 * $O.quantite]]></expression>
+                <expression><![CDATA[160 * $O.quantite * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3143,7 +3137,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - Chauffage individuel - H1]]></description>
-                <expression><![CDATA[210 * $O.quantite]]></expression>
+                <expression><![CDATA[210 * $O.quantite * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3161,7 +3155,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - Chauffage individuel - H2]]></description>
-                <expression><![CDATA[170 * $O.quantite]]></expression>
+                <expression><![CDATA[170 * $O.quantite * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3179,7 +3173,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - Chauffage individuel - H3]]></description>
-                <expression><![CDATA[110 * $O.quantite]]></expression>
+                <expression><![CDATA[110 * $O.quantite * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3197,7 +3191,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - Chauffage collectif - H1]]></description>
-                <expression><![CDATA[280 * $O.quantite]]></expression>
+                <expression><![CDATA[280 * $O.quantite * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3215,7 +3209,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - Chauffage collectif - H2]]></description>
-                <expression><![CDATA[230 * $O.quantite]]></expression>
+                <expression><![CDATA[230 * $O.quantite * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -3233,7 +3227,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Appartement - Chauffage collectif - H3]]></description>
-                <expression><![CDATA[150 * $O.quantite]]></expression>
+                <expression><![CDATA[150 * $O.quantite * $O.surface_chauffee]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Type de bâtiment]]></description>
@@ -4416,7 +4410,7 @@
         </conditions>
         <regles>
             <regle>
-                <description><![CDATA[Maison - H1 - 3.9 ≤ SCOP < 4.3]]></description>
+                <description><![CDATA[Maison - H1 - 3.9 <= SCOP < 4.3]]></description>
                 <expression><![CDATA[77900 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -4434,7 +4428,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 3.9 ≤ SCOP < 4.3]]></description>
+                <description><![CDATA[Maison - H2 - 3.9 <= SCOP < 4.3]]></description>
                 <expression><![CDATA[63700 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -4452,7 +4446,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 3.9 ≤ SCOP < 4.3]]></description>
+                <description><![CDATA[Maison - H3 - 3.9 <= SCOP < 4.3]]></description>
                 <expression><![CDATA[42500 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -4470,7 +4464,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H1 - 4.3 ≤ SCOP]]></description>
+                <description><![CDATA[Maison - H1 - 4.3 <= SCOP]]></description>
                 <expression><![CDATA[77900 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -4488,7 +4482,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 4.3 ≤ SCOP]]></description>
+                <description><![CDATA[Maison - H2 - 4.3 <= SCOP]]></description>
                 <expression><![CDATA[63700 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -4506,7 +4500,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 4.3 ≤ SCOP]]></description>
+                <description><![CDATA[Maison - H3 - 4.3 <= SCOP]]></description>
                 <expression><![CDATA[42500 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -4593,12 +4587,42 @@
         </conditions>
         <regles>
             <regle>
-                <description><![CDATA[Immeuble]]></description>
-                <expression><![CDATA[($0.cef_max - $O.cef_bat) * $0.srt * 17.984]]></expression>
+                <description><![CDATA[Chauffage et ECS électrique]]></description>
+                <expression><![CDATA[($0.cep_max / 2.58 - $O.cef_bat) * $0.surface_thermique * 17.984]]></expression>
                 <conditions>
                     <condition>
-                        <description><![CDATA[Type de bâtiment]]></description>
-                        <expression><![CDATA[$B.type === 'IMMEUBLE']]></expression>
+                        <description><![CDATA[Energie]]></description>
+                        <expression><![CDATA[$O.energie_chauffage_fiche === 'ELECTRICITE' && $O.energie_ecs_fiche === 'ELECTRICITE']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Chauffage et ECS combustible]]></description>
+                <expression><![CDATA[($0.cep_max * 0.9 + $0.cep_max * 0.1 / 2.58) * $0.surface_thermique * 17.984]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Energie]]></description>
+                        <expression><![CDATA[$O.energie_chauffage_fiche === 'COMBUSTIBLE' && $O.energie_ecs_fiche === 'COMBUSTIBLE']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Chauffage combustible et ECS électrique]]></description>
+                <expression><![CDATA[($0.cep_max * 0.65 + $0.cep_max * 0.25 / 2.58 + $0.cep_max * 0.1 / 2.58) * $0.surface_thermique * 17.984]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Energie]]></description>
+                        <expression><![CDATA[$O.energie_chauffage_fiche === 'COMBUSTIBLE' && $O.energie_ecs_fiche === 'ELECTRICITE']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[Chauffage électrique et ECS combustible]]></description>
+                <expression><![CDATA[($0.cep_max * 0.3 / 2.58 + $0.cep_max * 0.6 + $0.cep_max * 0.1 / 2.58) * $0.surface_thermique * 17.984]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Energie]]></description>
+                        <expression><![CDATA[$O.energie_chauffage_fiche === 'ELECTRICITE' && $O.energie_ecs_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -4851,7 +4875,7 @@
         </conditions>
         <regles>
             <regle>
-                <description><![CDATA[Maison - Puissance frigorifique 2.05 - 5.1 ≤ SEER < 5.6]]></description>
+                <description><![CDATA[Maison - Puissance frigorifique 2.05 - 5.1 <= SEER < 5.6]]></description>
                 <expression><![CDATA[2300]]></expression>
                 <conditions>
                     <condition>
@@ -4869,7 +4893,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - Puissance frigorifique 2.05 - 5.6 ≤ SEER < 6.1]]></description>
+                <description><![CDATA[Maison - Puissance frigorifique 2.05 - 5.6 <= SEER < 6.1]]></description>
                 <expression><![CDATA[4100]]></expression>
                 <conditions>
                     <condition>
@@ -4887,7 +4911,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - Puissance frigorifique 2.05 - 6.1 ≤ SEER < 8.5]]></description>
+                <description><![CDATA[Maison - Puissance frigorifique 2.05 - 6.1 <= SEER < 8.5]]></description>
                 <expression><![CDATA[5700]]></expression>
                 <conditions>
                     <condition>
@@ -4923,7 +4947,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - Puissance frigorifique 2.64 - 5.1 ≤ SEER < 5.6]]></description>
+                <description><![CDATA[Maison - Puissance frigorifique 2.64 - 5.1 <= SEER < 5.6]]></description>
                 <expression><![CDATA[2600]]></expression>
                 <conditions>
                     <condition>
@@ -4941,7 +4965,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - Puissance frigorifique 2.64 - 5.6 ≤ SEER < 6.1]]></description>
+                <description><![CDATA[Maison - Puissance frigorifique 2.64 - 5.6 <= SEER < 6.1]]></description>
                 <expression><![CDATA[4800]]></expression>
                 <conditions>
                     <condition>
@@ -4959,7 +4983,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - Puissance frigorifique 2.64 - 6.1 ≤ SEER < 8.5]]></description>
+                <description><![CDATA[Maison - Puissance frigorifique 2.64 - 6.1 <= SEER < 8.5]]></description>
                 <expression><![CDATA[6600]]></expression>
                 <conditions>
                     <condition>
@@ -4995,7 +5019,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - Puissance frigorifique 2.05 - 5.1 ≤ SEER < 5.6]]></description>
+                <description><![CDATA[Appartement - Puissance frigorifique 2.05 - 5.1 <= SEER < 5.6]]></description>
                 <expression><![CDATA[1300]]></expression>
                 <conditions>
                     <condition>
@@ -5013,7 +5037,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - Puissance frigorifique 2.05 - 5.6 ≤ SEER < 6.1]]></description>
+                <description><![CDATA[Appartement - Puissance frigorifique 2.05 - 5.6 <= SEER < 6.1]]></description>
                 <expression><![CDATA[2500]]></expression>
                 <conditions>
                     <condition>
@@ -5031,7 +5055,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - Puissance frigorifique 2.05 - 6.1 ≤ SEER < 8.5]]></description>
+                <description><![CDATA[Appartement - Puissance frigorifique 2.05 - 6.1 <= SEER < 8.5]]></description>
                 <expression><![CDATA[3400]]></expression>
                 <conditions>
                     <condition>
@@ -5067,7 +5091,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - Puissance frigorifique 2.64 - 5.1 ≤ SEER < 5.6]]></description>
+                <description><![CDATA[Appartement - Puissance frigorifique 2.64 - 5.1 <= SEER < 5.6]]></description>
                 <expression><![CDATA[1600]]></expression>
                 <conditions>
                     <condition>
@@ -5085,7 +5109,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - Puissance frigorifique 2.64 - 5.6 ≤ SEER < 6.1]]></description>
+                <description><![CDATA[Appartement - Puissance frigorifique 2.64 - 5.6 <= SEER < 6.1]]></description>
                 <expression><![CDATA[2900]]></expression>
                 <conditions>
                     <condition>
@@ -5103,7 +5127,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - Puissance frigorifique 2.64 - 6.1 ≤ SEER < 8.5]]></description>
+                <description><![CDATA[Appartement - Puissance frigorifique 2.64 - 6.1 <= SEER < 8.5]]></description>
                 <expression><![CDATA[4000]]></expression>
                 <conditions>
                     <condition>
@@ -5351,7 +5375,7 @@
         </conditions>
         <regles>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - 102% ≤ ηs < 110% - Chauffage - H1]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - 102% <= ηs < 110% - Chauffage - H1]]></description>
                 <expression><![CDATA[46600 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5373,7 +5397,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - 102% ≤ ηs < 110% - Chauffage - H2]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - 102% <= ηs < 110% - Chauffage - H2]]></description>
                 <expression><![CDATA[38200 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5395,7 +5419,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - 102% ≤ ηs < 110% - Chauffage - H3]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - 102% <= ηs < 110% - Chauffage - H3]]></description>
                 <expression><![CDATA[25300 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5417,7 +5441,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - 102% ≤ ηs < 110% - Chauffage et ECS - H1]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - 102% <= ηs < 110% - Chauffage et ECS - H1]]></description>
                 <expression><![CDATA[68700 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5439,7 +5463,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - 102% ≤ ηs < 110% - Chauffage et ECS - H2]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - 102% <= ηs < 110% - Chauffage et ECS - H2]]></description>
                 <expression><![CDATA[59400 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5461,7 +5485,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - 102% ≤ ηs < 110% - Chauffage et ECS - H3]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - 102% <= ηs < 110% - Chauffage et ECS - H3]]></description>
                 <expression><![CDATA[44600 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5483,7 +5507,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - 110% ≤ ηs < 120% - Chauffage - H1]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - 110% <= ηs < 120% - Chauffage - H1]]></description>
                 <expression><![CDATA[56400 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5505,7 +5529,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - 110% ≤ ηs < 120% - Chauffage - H2]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - 110% <= ηs < 120% - Chauffage - H2]]></description>
                 <expression><![CDATA[46200 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5527,7 +5551,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - 110% ≤ ηs < 120% - Chauffage - H3]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - 110% <= ηs < 120% - Chauffage - H3]]></description>
                 <expression><![CDATA[30600 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5549,7 +5573,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - 110% ≤ ηs < 120% - Chauffage et ECS - H1]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - 110% <= ηs < 120% - Chauffage et ECS - H1]]></description>
                 <expression><![CDATA[83200 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5571,7 +5595,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - 110% ≤ ηs < 120% - Chauffage et ECS - H2]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - 110% <= ηs < 120% - Chauffage et ECS - H2]]></description>
                 <expression><![CDATA[72000 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5593,7 +5617,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - 110% ≤ ηs < 120% - Chauffage et ECS - H3]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - 110% <= ηs < 120% - Chauffage et ECS - H3]]></description>
                 <expression><![CDATA[54000 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5615,7 +5639,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - ηs >= 120% - Chauffage - H1]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - ηs >= 120% - Chauffage - H1]]></description>
                 <expression><![CDATA[65800 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5637,7 +5661,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - ηs >= 120% - Chauffage - H2]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - ηs >= 120% - Chauffage - H2]]></description>
                 <expression><![CDATA[53900 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5659,7 +5683,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - ηs >= 120% - Chauffage - H3]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - ηs >= 120% - Chauffage - H3]]></description>
                 <expression><![CDATA[35700 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5681,7 +5705,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - ηs >= 120% - Chauffage et ECS - H1]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - ηs >= 120% - Chauffage et ECS - H1]]></description>
                 <expression><![CDATA[96900 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5703,7 +5727,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - ηs >= 120% - Chauffage et ECS - H2]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - ηs >= 120% - Chauffage et ECS - H2]]></description>
                 <expression><![CDATA[83900 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5725,7 +5749,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale ≤ 400 - ηs >= 120% - Chauffage et ECS - H3]]></description>
+                <description><![CDATA[Puissance thermique nominale <= 400 - ηs >= 120% - Chauffage et ECS - H3]]></description>
                 <expression><![CDATA[62900 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5747,7 +5771,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale < 400 - 1.3 ≤ COP < 1.6 - Chauffage - H1]]></description>
+                <description><![CDATA[Puissance thermique nominale < 400 - 1.3 <= COP < 1.6 - Chauffage - H1]]></description>
                 <expression><![CDATA[71900 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5769,7 +5793,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale < 400 - 1.3 ≤ COP < 1.6 - Chauffage - H2]]></description>
+                <description><![CDATA[Puissance thermique nominale < 400 - 1.3 <= COP < 1.6 - Chauffage - H2]]></description>
                 <expression><![CDATA[58900 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5791,7 +5815,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale < 400 - 1.3 ≤ COP < 1.6 - Chauffage - H3]]></description>
+                <description><![CDATA[Puissance thermique nominale < 400 - 1.3 <= COP < 1.6 - Chauffage - H3]]></description>
                 <expression><![CDATA[39000 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5813,7 +5837,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale < 400 - 1.3 ≤ COP < 1.6 - Chauffage et ECS - H1]]></description>
+                <description><![CDATA[Puissance thermique nominale < 400 - 1.3 <= COP < 1.6 - Chauffage et ECS - H1]]></description>
                 <expression><![CDATA[106000 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5835,7 +5859,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale < 400 - 1.3 ≤ COP < 1.6 - Chauffage et ECS - H2]]></description>
+                <description><![CDATA[Puissance thermique nominale < 400 - 1.3 <= COP < 1.6 - Chauffage et ECS - H2]]></description>
                 <expression><![CDATA[91700 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5857,7 +5881,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale < 400 - 1.3 ≤ COP <1.6 - Chauffage et ECS - H3]]></description>
+                <description><![CDATA[Puissance thermique nominale < 400 - 1.3 <= COP <1.6 - Chauffage et ECS - H3]]></description>
                 <expression><![CDATA[68800 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5879,7 +5903,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale < 400 - COP ≤ 1.6 - Chauffage - H1]]></description>
+                <description><![CDATA[Puissance thermique nominale < 400 - COP <= 1.6 - Chauffage - H1]]></description>
                 <expression><![CDATA[91100 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5896,12 +5920,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient de performance]]></description>
-                        <expression><![CDATA[$O.cop ≤ 1.6]]></expression>
+                        <expression><![CDATA[$O.cop <= 1.6]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale < 400 - COP ≤ 1.6 - Chauffage - H2]]></description>
+                <description><![CDATA[Puissance thermique nominale < 400 - COP <= 1.6 - Chauffage - H2]]></description>
                 <expression><![CDATA[74600 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5918,12 +5942,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient de performance]]></description>
-                        <expression><![CDATA[$O.cop ≤ 1.6]]></expression>
+                        <expression><![CDATA[$O.cop <= 1.6]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale < 400 - COP ≤ 1.6 - Chauffage - H3]]></description>
+                <description><![CDATA[Puissance thermique nominale < 400 - COP <= 1.6 - Chauffage - H3]]></description>
                 <expression><![CDATA[49500 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5940,12 +5964,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient de performance]]></description>
-                        <expression><![CDATA[$O.cop ≤ 1.6]]></expression>
+                        <expression><![CDATA[$O.cop <= 1.6]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale < 400 - COP ≤ 1.6 - Chauffage et ECS - H1]]></description>
+                <description><![CDATA[Puissance thermique nominale < 400 - COP <= 1.6 - Chauffage et ECS - H1]]></description>
                 <expression><![CDATA[134300 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5962,12 +5986,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient de performance]]></description>
-                        <expression><![CDATA[$O.cop ≤ 1.6]]></expression>
+                        <expression><![CDATA[$O.cop <= 1.6]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale < 400 - COP ≤ 1.6 - Chauffage et ECS - H2]]></description>
+                <description><![CDATA[Puissance thermique nominale < 400 - COP <= 1.6 - Chauffage et ECS - H2]]></description>
                 <expression><![CDATA[116200 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -5984,12 +6008,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient de performance]]></description>
-                        <expression><![CDATA[$O.cop ≤ 1.6]]></expression>
+                        <expression><![CDATA[$O.cop <= 1.6]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Puissance thermique nominale < 400 - COP ≤ 1.6 - Chauffage et ECS - H3]]></description>
+                <description><![CDATA[Puissance thermique nominale < 400 - COP <= 1.6 - Chauffage et ECS - H3]]></description>
                 <expression><![CDATA[87200 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
@@ -6006,7 +6030,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Coefficient de performance]]></description>
-                        <expression><![CDATA[$O.cop ≤ 1.6]]></expression>
+                        <expression><![CDATA[$O.cop <= 1.6]]></expression>
                     </condition>
                 </conditions>
             </regle>
@@ -6255,7 +6279,7 @@
         </conditions>
         <regles>
             <regle>
-                <description><![CDATA[Maison - H1 - 111% ≤ ηs <120%]]></description>
+                <description><![CDATA[Maison - H1 - 111% <= ηs <120%]]></description>
                 <expression><![CDATA[74100 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6273,7 +6297,7 @@
                 </conditions>
             </regle>
               <regle>
-                <description><![CDATA[Maison - H2 - 111% ≤ ηs <120%]]></description>
+                <description><![CDATA[Maison - H2 - 111% <= ηs <120%]]></description>
                 <expression><![CDATA[62800 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6291,7 +6315,7 @@
                 </conditions>
             </regle>
               <regle>
-                <description><![CDATA[Maison - H3 - 111% ≤ ηs <120%]]></description>
+                <description><![CDATA[Maison - H3 - 111% <= ηs <120%]]></description>
                 <expression><![CDATA[45600 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6309,7 +6333,7 @@
                 </conditions>
             </regle>
               <regle>
-                <description><![CDATA[Maison - H1 - 120% ≤ ηs <130%]]></description>
+                <description><![CDATA[Maison - H1 - 120% <= ηs <130%]]></description>
                 <expression><![CDATA[90300 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6327,7 +6351,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 120% ≤ ηs <130%]]></description>
+                <description><![CDATA[Maison - H2 - 120% <= ηs <130%]]></description>
                 <expression><![CDATA[76500 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6345,7 +6369,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 120% ≤ ηs <130%]]></description>
+                <description><![CDATA[Maison - H3 - 120% <= ηs <130%]]></description>
                 <expression><![CDATA[55400 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6363,7 +6387,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H1 - 130% ≤ ηs <140%]]></description>
+                <description><![CDATA[Maison - H1 - 130% <= ηs <140%]]></description>
                 <expression><![CDATA[104800 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6381,7 +6405,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 130% ≤ ηs <140%]]></description>
+                <description><![CDATA[Maison - H2 - 130% <= ηs <140%]]></description>
                 <expression><![CDATA[88800 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6399,7 +6423,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 130% ≤ ηs <140%]]></description>
+                <description><![CDATA[Maison - H3 - 130% <= ηs <140%]]></description>
                 <expression><![CDATA[64400 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6417,7 +6441,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H1 - 140% ≤ ηs <150%]]></description>
+                <description><![CDATA[Maison - H1 - 140% <= ηs <150%]]></description>
                 <expression><![CDATA[117200 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6435,7 +6459,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 140% ≤ ηs <150%]]></description>
+                <description><![CDATA[Maison - H2 - 140% <= ηs <150%]]></description>
                 <expression><![CDATA[99400 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6453,7 +6477,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 140% ≤ ηs <150%]]></description>
+                <description><![CDATA[Maison - H3 - 140% <= ηs <150%]]></description>
                 <expression><![CDATA[72000 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6471,7 +6495,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H1 - 150% ≤ ηs <160%]]></description>
+                <description><![CDATA[Maison - H1 - 150% <= ηs <160%]]></description>
                 <expression><![CDATA[128000 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6489,7 +6513,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 150% ≤ ηs <160%]]></description>
+                <description><![CDATA[Maison - H2 - 150% <= ηs <160%]]></description>
                 <expression><![CDATA[108500 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6507,7 +6531,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 150% ≤ ηs <160%]]></description>
+                <description><![CDATA[Maison - H3 - 150% <= ηs <160%]]></description>
                 <expression><![CDATA[78700 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6525,7 +6549,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H1 - ηs ≤160%]]></description>
+                <description><![CDATA[Maison - H1 - ηs <=160%]]></description>
                 <expression><![CDATA[137500 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6538,12 +6562,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas ≤ 160]]></expression>
+                        <expression><![CDATA[$O.etas <= 160]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - ηs ≤160%]]></description>
+                <description><![CDATA[Maison - H2 - ηs <=160%]]></description>
                 <expression><![CDATA[116600 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6556,12 +6580,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas ≤ 160]]></expression>
+                        <expression><![CDATA[$O.etas <= 160]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - ηs ≤160%]]></description>
+                <description><![CDATA[Maison - H3 - ηs <=160%]]></description>
                 <expression><![CDATA[84500 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6579,7 +6603,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - 111% ≤ ηs <120%]]></description>
+                <description><![CDATA[Appartement - H1 - 111% <= ηs <120%]]></description>
                 <expression><![CDATA[39600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6597,7 +6621,7 @@
                 </conditions>
             </regle>
               <regle>
-                <description><![CDATA[Appartement - H2 - 111% ≤ ηs <120%]]></description>
+                <description><![CDATA[Appartement - H2 - 111% <= ηs <120%]]></description>
                 <expression><![CDATA[33900 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6615,7 +6639,7 @@
                 </conditions>
             </regle>
               <regle>
-                <description><![CDATA[Appartement - H3 - 111% ≤ ηs <120%]]></description>
+                <description><![CDATA[Appartement - H3 - 111% <= ηs <120%]]></description>
                 <expression><![CDATA[25600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6633,7 +6657,7 @@
                 </conditions>
             </regle>
               <regle>
-                <description><![CDATA[Appartement - H1 - 120% ≤ ηs <130%]]></description>
+                <description><![CDATA[Appartement - H1 - 120% <= ηs <130%]]></description>
                 <expression><![CDATA[48200 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6651,7 +6675,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - 120% ≤ ηs <130%]]></description>
+                <description><![CDATA[Appartement - H2 - 120% <= ηs <130%]]></description>
                 <expression><![CDATA[41300 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6669,7 +6693,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - 120% ≤ ηs <130%]]></description>
+                <description><![CDATA[Appartement - H3 - 120% <= ηs <130%]]></description>
                 <expression><![CDATA[31200 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6687,7 +6711,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - 130% ≤ ηs <140%]]></description>
+                <description><![CDATA[Appartement - H1 - 130% <= ηs <140%]]></description>
                 <expression><![CDATA[55900 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6705,7 +6729,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - 130% ≤ ηs <140%]]></description>
+                <description><![CDATA[Appartement - H2 - 130% <= ηs <140%]]></description>
                 <expression><![CDATA[47900 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6723,7 +6747,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - 130% ≤ ηs <140%]]></description>
+                <description><![CDATA[Appartement - H3 - 130% <= ηs <140%]]></description>
                 <expression><![CDATA[36200 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6741,7 +6765,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - 140% ≤ ηs <150%]]></description>
+                <description><![CDATA[Appartement - H1 - 140% <= ηs <150%]]></description>
                 <expression><![CDATA[62600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6759,7 +6783,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - 140% ≤ ηs <150%]]></description>
+                <description><![CDATA[Appartement - H2 - 140% <= ηs <150%]]></description>
                 <expression><![CDATA[53600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6777,7 +6801,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - 140% ≤ ηs <150%]]></description>
+                <description><![CDATA[Appartement - H3 - 140% <= ηs <150%]]></description>
                 <expression><![CDATA[40500 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6795,7 +6819,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - 150% ≤ ηs <160%]]></description>
+                <description><![CDATA[Appartement - H1 - 150% <= ηs <160%]]></description>
                 <expression><![CDATA[68400 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6813,7 +6837,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - 150% ≤ ηs <160%]]></description>
+                <description><![CDATA[Appartement - H2 - 150% <= ηs <160%]]></description>
                 <expression><![CDATA[58600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6831,7 +6855,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - 150% ≤ ηs <160%]]></description>
+                <description><![CDATA[Appartement - H3 - 150% <= ηs <160%]]></description>
                 <expression><![CDATA[44200 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6849,7 +6873,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - ηs ≤160%]]></description>
+                <description><![CDATA[Appartement - H1 - ηs <=160%]]></description>
                 <expression><![CDATA[73400 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6862,12 +6886,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas ≤ 160]]></expression>
+                        <expression><![CDATA[$O.etas <= 160]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - ηs ≤160%]]></description>
+                <description><![CDATA[Appartement - H2 - ηs <=160%]]></description>
                 <expression><![CDATA[62900 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6880,12 +6904,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas ≤ 160]]></expression>
+                        <expression><![CDATA[$O.etas <= 160]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - ηs ≤160%]]></description>
+                <description><![CDATA[Appartement - H3 - ηs <=160%]]></description>
                 <expression><![CDATA[47500 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -6931,7 +6955,7 @@
         </conditions>
         <regles>
             <regle>
-                <description><![CDATA[Maison - H1 - 111% ≤ ηs <120%]]></description>
+                <description><![CDATA[Maison - H1 - 111% <= ηs <120%]]></description>
                 <expression><![CDATA[74100 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6949,7 +6973,7 @@
                 </conditions>
             </regle>
               <regle>
-                <description><![CDATA[Maison - H2 - 111% ≤ ηs <120%]]></description>
+                <description><![CDATA[Maison - H2 - 111% <= ηs <120%]]></description>
                 <expression><![CDATA[62800 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6967,7 +6991,7 @@
                 </conditions>
             </regle>
               <regle>
-                <description><![CDATA[Maison - H3 - 111% ≤ ηs <120%]]></description>
+                <description><![CDATA[Maison - H3 - 111% <= ηs <120%]]></description>
                 <expression><![CDATA[45600 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -6985,7 +7009,7 @@
                 </conditions>
             </regle>
               <regle>
-                <description><![CDATA[Maison - H1 - 120% ≤ ηs <130%]]></description>
+                <description><![CDATA[Maison - H1 - 120% <= ηs <130%]]></description>
                 <expression><![CDATA[90300 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7003,7 +7027,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 120% ≤ ηs <130%]]></description>
+                <description><![CDATA[Maison - H2 - 120% <= ηs <130%]]></description>
                 <expression><![CDATA[76500 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7021,7 +7045,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 120% ≤ ηs <130%]]></description>
+                <description><![CDATA[Maison - H3 - 120% <= ηs <130%]]></description>
                 <expression><![CDATA[55400 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7039,7 +7063,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H1 - 130% ≤ ηs <140%]]></description>
+                <description><![CDATA[Maison - H1 - 130% <= ηs <140%]]></description>
                 <expression><![CDATA[104800 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7057,7 +7081,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 130% ≤ ηs <140%]]></description>
+                <description><![CDATA[Maison - H2 - 130% <= ηs <140%]]></description>
                 <expression><![CDATA[88800 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7075,7 +7099,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 130% ≤ ηs <140%]]></description>
+                <description><![CDATA[Maison - H3 - 130% <= ηs <140%]]></description>
                 <expression><![CDATA[64400 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7093,7 +7117,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H1 - 140% ≤ ηs <150%]]></description>
+                <description><![CDATA[Maison - H1 - 140% <= ηs <150%]]></description>
                 <expression><![CDATA[117200 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7111,7 +7135,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 140% ≤ ηs <150%]]></description>
+                <description><![CDATA[Maison - H2 - 140% <= ηs <150%]]></description>
                 <expression><![CDATA[99400 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7129,7 +7153,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 140% ≤ ηs <150%]]></description>
+                <description><![CDATA[Maison - H3 - 140% <= ηs <150%]]></description>
                 <expression><![CDATA[72000 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7147,7 +7171,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H1 - 150% ≤ ηs <160%]]></description>
+                <description><![CDATA[Maison - H1 - 150% <= ηs <160%]]></description>
                 <expression><![CDATA[128000 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7165,7 +7189,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - 150% ≤ ηs <160%]]></description>
+                <description><![CDATA[Maison - H2 - 150% <= ηs <160%]]></description>
                 <expression><![CDATA[108500 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7183,7 +7207,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - 150% ≤ ηs <160%]]></description>
+                <description><![CDATA[Maison - H3 - 150% <= ηs <160%]]></description>
                 <expression><![CDATA[78700 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7201,7 +7225,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H1 - ηs ≤160%]]></description>
+                <description><![CDATA[Maison - H1 - ηs <=160%]]></description>
                 <expression><![CDATA[137500 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7214,12 +7238,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas ≤ 160]]></expression>
+                        <expression><![CDATA[$O.etas <= 160]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H2 - ηs ≤160%]]></description>
+                <description><![CDATA[Maison - H2 - ηs <=160%]]></description>
                 <expression><![CDATA[116600 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7232,12 +7256,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas ≤ 160]]></expression>
+                        <expression><![CDATA[$O.etas <= 160]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Maison - H3 - ηs ≤160%]]></description>
+                <description><![CDATA[Maison - H3 - ηs <=160%]]></description>
                 <expression><![CDATA[84500 * $O.facteur_correctif_sch_5]]></expression>
                 <conditions>
                     <condition>
@@ -7255,7 +7279,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - 111% ≤ ηs <120%]]></description>
+                <description><![CDATA[Appartement - H1 - 111% <= ηs <120%]]></description>
                 <expression><![CDATA[39600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7273,7 +7297,7 @@
                 </conditions>
             </regle>
               <regle>
-                <description><![CDATA[Appartement - H2 - 111% ≤ ηs <120%]]></description>
+                <description><![CDATA[Appartement - H2 - 111% <= ηs <120%]]></description>
                 <expression><![CDATA[33900 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7291,7 +7315,7 @@
                 </conditions>
             </regle>
               <regle>
-                <description><![CDATA[Appartement - H3 - 111% ≤ ηs <120%]]></description>
+                <description><![CDATA[Appartement - H3 - 111% <= ηs <120%]]></description>
                 <expression><![CDATA[25600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7309,7 +7333,7 @@
                 </conditions>
             </regle>
               <regle>
-                <description><![CDATA[Appartement - H1 - 120% ≤ ηs <130%]]></description>
+                <description><![CDATA[Appartement - H1 - 120% <= ηs <130%]]></description>
                 <expression><![CDATA[48200 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7327,7 +7351,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - 120% ≤ ηs <130%]]></description>
+                <description><![CDATA[Appartement - H2 - 120% <= ηs <130%]]></description>
                 <expression><![CDATA[41300 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7345,7 +7369,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - 120% ≤ ηs <130%]]></description>
+                <description><![CDATA[Appartement - H3 - 120% <= ηs <130%]]></description>
                 <expression><![CDATA[31200 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7363,7 +7387,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - 130% ≤ ηs <140%]]></description>
+                <description><![CDATA[Appartement - H1 - 130% <= ηs <140%]]></description>
                 <expression><![CDATA[55900 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7381,7 +7405,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - 130% ≤ ηs <140%]]></description>
+                <description><![CDATA[Appartement - H2 - 130% <= ηs <140%]]></description>
                 <expression><![CDATA[47900 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7399,7 +7423,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - 130% ≤ ηs <140%]]></description>
+                <description><![CDATA[Appartement - H3 - 130% <= ηs <140%]]></description>
                 <expression><![CDATA[36200 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7417,7 +7441,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - 140% ≤ ηs <150%]]></description>
+                <description><![CDATA[Appartement - H1 - 140% <= ηs <150%]]></description>
                 <expression><![CDATA[62600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7435,7 +7459,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - 140% ≤ ηs <150%]]></description>
+                <description><![CDATA[Appartement - H2 - 140% <= ηs <150%]]></description>
                 <expression><![CDATA[53600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7453,7 +7477,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - 140% ≤ ηs <150%]]></description>
+                <description><![CDATA[Appartement - H3 - 140% <= ηs <150%]]></description>
                 <expression><![CDATA[40500 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7471,7 +7495,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - 150% ≤ ηs <160%]]></description>
+                <description><![CDATA[Appartement - H1 - 150% <= ηs <160%]]></description>
                 <expression><![CDATA[68400 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7489,7 +7513,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - 150% ≤ ηs <160%]]></description>
+                <description><![CDATA[Appartement - H2 - 150% <= ηs <160%]]></description>
                 <expression><![CDATA[58600 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7507,7 +7531,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - 150% ≤ ηs <160%]]></description>
+                <description><![CDATA[Appartement - H3 - 150% <= ηs <160%]]></description>
                 <expression><![CDATA[44200 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7525,7 +7549,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H1 - ηs ≤160%]]></description>
+                <description><![CDATA[Appartement - H1 - ηs <=160%]]></description>
                 <expression><![CDATA[73400 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7538,12 +7562,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas ≤ 160]]></expression>
+                        <expression><![CDATA[$O.etas <= 160]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H2 - ηs ≤160%]]></description>
+                <description><![CDATA[Appartement - H2 - ηs <=160%]]></description>
                 <expression><![CDATA[62900 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7556,12 +7580,12 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Efficacité énergétique saisonnière]]></description>
-                        <expression><![CDATA[$O.etas ≤ 160]]></expression>
+                        <expression><![CDATA[$O.etas <= 160]]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Appartement - H3 - ηs ≤160%]]></description>
+                <description><![CDATA[Appartement - H3 - ηs <=160%]]></description>
                 <expression><![CDATA[47500 * $O.facteur_correctif_sch_7]]></expression>
                 <conditions>
                     <condition>
@@ -7718,7 +7742,7 @@
         </conditions>
         <regles>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 20 ≤ DN ≤ 65 - 50°C ≤ Tfluide ≤ 120°C - H1]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 20 <= DN <= 65 - 50°C <= Tfluide <= 120°C - H1]]></description>
                 <expression><![CDATA[11700 * $O.housses_[x]_quantite]]></expression>
                 <conditions>
                     <condition>
@@ -7740,7 +7764,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 20 ≤ DN ≤ 65 - 50°C ≤ Tfluide ≤ 120°C - H2]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 20 <= DN <= 65 - 50°C <= Tfluide <= 120°C - H2]]></description>
                 <expression><![CDATA[10500 * $O.housses_[x]_quantite]]></expression>
                 <conditions>
                     <condition>
@@ -7762,7 +7786,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 20 ≤ DN ≤ 65 - 50°C ≤ Tfluide ≤ 120°C - H3]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 20 <= DN <= 65 - 50°C <= Tfluide <= 120°C - H3]]></description>
                 <expression><![CDATA[8800 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -7784,7 +7808,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 65 ≤ DN ≤ 100 - 50°C ≤ Tfluide ≤ 120°C - H1]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 65 <= DN <= 100 - 50°C <= Tfluide <= 120°C - H1]]></description>
                 <expression><![CDATA[25100 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -7806,7 +7830,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 65 ≤ DN ≤ 100 - 50°C ≤ Tfluide ≤ 120°C - H2]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 65 <= DN <= 100 - 50°C <= Tfluide <= 120°C - H2]]></description>
                 <expression><![CDATA[22700 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -7828,7 +7852,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 65 ≤ DN ≤ 100 - 50°C ≤ Tfluide ≤ 120°C - H3]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 65 <= DN <= 100 - 50°C <= Tfluide <= 120°C - H3]]></description>
                 <expression><![CDATA[18900 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -7850,7 +7874,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 100 < DN - 50°C ≤ Tfluide ≤ 120°C - H1]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 100 < DN - 50°C <= Tfluide <= 120°C - H1]]></description>
                 <expression><![CDATA[40900 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -7872,7 +7896,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 100 < DN - 50°C ≤ Tfluide ≤ 120°C - H2]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 100 < DN - 50°C <= Tfluide <= 120°C - H2]]></description>
                 <expression><![CDATA[37000 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -7894,7 +7918,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 100 < DN - 50°C ≤ Tfluide ≤ 120°C - H3]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 100 < DN - 50°C <= Tfluide <= 120°C - H3]]></description>
                 <expression><![CDATA[30800 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -7916,7 +7940,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 20 ≤ DN ≤ 65 - Tfluide > 120°C - H1]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 20 <= DN <= 65 - Tfluide > 120°C - H1]]></description>
                 <expression><![CDATA[12900 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -7938,7 +7962,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 20 ≤ DN ≤ 65 - Tfluide > 120°C - H2]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 20 <= DN <= 65 - Tfluide > 120°C - H2]]></description>
                 <expression><![CDATA[11600 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -7960,7 +7984,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 20 ≤ DN ≤ 65 - Tfluide > 120°C - H3]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 20 <= DN <= 65 - Tfluide > 120°C - H3]]></description>
                 <expression><![CDATA[9700 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -7982,7 +8006,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 65 ≤ DN ≤ 100 - Tfluide > 120°C - H1]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 65 <= DN <= 100 - Tfluide > 120°C - H1]]></description>
                 <expression><![CDATA[27800 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -8004,7 +8028,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 65 ≤ DN ≤ 100 - Tfluide > 120°C - H2]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 65 <= DN <= 100 - Tfluide > 120°C - H2]]></description>
                 <expression><![CDATA[25100 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -8026,7 +8050,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Hors échangeur à plaque - 65 ≤ DN ≤ 100 - Tfluide > 120°C - H3]]></description>
+                <description><![CDATA[Hors échangeur à plaque - 65 <= DN <= 100 - Tfluide > 120°C - H3]]></description>
                 <expression><![CDATA[20900 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -8114,7 +8138,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Pour un échangeur à plaque - 50°C ≤ Tfluide ≤ 120°C - H1]]></description>
+                <description><![CDATA[Pour un échangeur à plaque - 50°C <= Tfluide <= 120°C - H1]]></description>
                 <expression><![CDATA[77200 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -8132,7 +8156,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Pour un échangeur à plaque - 50°C ≤ Tfluide ≤ 120°C - H2]]></description>
+                <description><![CDATA[Pour un échangeur à plaque - 50°C <= Tfluide <= 120°C - H2]]></description>
                 <expression><![CDATA[73500 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -8150,7 +8174,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Pour un échangeur à plaque - 50°C ≤ Tfluide ≤ 120°C - H3]]></description>
+                <description><![CDATA[Pour un échangeur à plaque - 50°C <= Tfluide <= 120°C - H3]]></description>
                 <expression><![CDATA[66900 * $O.quantite]]></expression>
                 <conditions>
                     <condition>
@@ -8376,7 +8400,7 @@
                 <expression><![CDATA[$O.quantite_chaleur_nette * 4.8]]></expression>
                 <conditions>
                     <condition>
-                        <description><![CDATA[Puissance thermique nominale ≤ 500kW]]></description>
+                        <description><![CDATA[Puissance thermique nominale <= 500kW]]></description>
                         <expression><![CDATA[$O.puissance_nominale <= 500]]></expression>
                     </condition>
                 </conditions>
@@ -8415,54 +8439,70 @@
         </conditions>
         <regles>
             <regle>
-                <description><![CDATA[Eau chaude sanitaire - H1]]></description>
-                <expression><![CDATA[7100 * $O.quantite]]></expression>
+                <description><![CDATA[H1 - 111% ≤ Etas < 120% - Chauffage]]></description>
+                <expression><![CDATA[34000 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
                         <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
                     </condition>
                     <condition>
+                        <description><![CDATA[Etas]]></description>
+                        <expression><![CDATA[$O.etas >= 111 && $O.etas < 120]]></expression>
+                    </condition>
+                    <condition>
                         <description><![CDATA[Usages]]></description>
-                        <expression><![CDATA[$O.type_usage === 'ECS']]></expression>
+                        <expression><![CDATA[$O.type_usage === 'CHAUFFAGE']]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Eau chaude sanitaire - H2]]></description>
-                <expression><![CDATA[8200 * $O.quantite]]></expression>
+                <description><![CDATA[H2 - 111% ≤ Etas < 120% - Chauffage]]></description>
+                <expression><![CDATA[28000 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
                         <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
                     </condition>
                     <condition>
+                        <description><![CDATA[Etas]]></description>
+                        <expression><![CDATA[$O.etas >= 111 && $O.etas < 120]]></expression>
+                    </condition>
+                    <condition>
                         <description><![CDATA[Usages]]></description>
-                        <expression><![CDATA[$O.type_usage === 'ECS']]></expression>
+                        <expression><![CDATA[$O.type_usage === 'CHAUFFAGE']]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Eau chaude sanitaire - H3]]></description>
-                <expression><![CDATA[10400 * $O.quantite]]></expression>
+                <description><![CDATA[H3 - 111% ≤ Etas < 120% - Chauffage]]></description>
+                <expression><![CDATA[18700 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
                         <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
                     </condition>
                     <condition>
+                        <description><![CDATA[Etas]]></description>
+                        <expression><![CDATA[$O.etas >= 111 && $O.etas < 120]]></expression>
+                    </condition>
+                    <condition>
                         <description><![CDATA[Usages]]></description>
-                        <expression><![CDATA[$O.type_usage === 'ECS']]></expression>
+                        <expression><![CDATA[$O.type_usage === 'CHAUFFAGE']]></expression>
                     </condition>
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Eau chaude sanitaire et chauffage - H1]]></description>
-                <expression><![CDATA[14300 * $O.quantite]]></expression>
+                <description><![CDATA[H1 - 111% ≤ Etas < 120% - Chauffage/ECS]]></description>
+                <expression><![CDATA[52000 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
                         <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Etas]]></description>
+                        <expression><![CDATA[$O.etas >= 111 && $O.etas < 120]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Usages]]></description>
@@ -8471,12 +8511,16 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Eau chaude sanitaire et chauffage - H2]]></description>
-                <expression><![CDATA[12800 * $O.quantite]]></expression>
+                <description><![CDATA[H2 - 111% ≤ Etas < 120% - Chauffage/ECS]]></description>
+                <expression><![CDATA[43000 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
                         <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Etas]]></description>
+                        <expression><![CDATA[$O.etas >= 111 && $O.etas < 120]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Usages]]></description>
@@ -8485,12 +8529,124 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[Eau chaude sanitaire et chauffage - H3]]></description>
-                <expression><![CDATA[11000 * $O.quantite]]></expression>
+                <description><![CDATA[H3 - 111% ≤ Etas < 120% - Chauffage/ECS]]></description>
+                <expression><![CDATA[34000 * $O.logements * $O.facteur_correctif_rch]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
                         <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Etas]]></description>
+                        <expression><![CDATA[$O.etas >= 111 && $O.etas < 120]]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Usages]]></description>
+                        <expression><![CDATA[$O.type_usage === 'CHAUFFAGE_ECS']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[H1 - Etas >= 120% - Chauffage]]></description>
+                <expression><![CDATA[43000 * $O.logements * $O.facteur_correctif_rch]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Etas]]></description>
+                        <expression><![CDATA[$O.etas >= 120]]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Usages]]></description>
+                        <expression><![CDATA[$O.type_usage === 'CHAUFFAGE']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[H2 - Etas >= 120%  - Chauffage]]></description>
+                <expression><![CDATA[35000 * $O.logements * $O.facteur_correctif_rch]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Etas]]></description>
+                        <expression><![CDATA[$O.etas >= 120]]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Usages]]></description>
+                        <expression><![CDATA[$O.type_usage === 'CHAUFFAGE']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[H3 - Etas >= 120%  - Chauffage]]></description>
+                <expression><![CDATA[23700 * $O.logements * $O.facteur_correctif_rch]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Etas]]></description>
+                        <expression><![CDATA[$O.etas >= 120]]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Usages]]></description>
+                        <expression><![CDATA[$O.type_usage === 'CHAUFFAGE']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[H1 - Etas >= 120%  - Chauffage/ECS]]></description>
+                <expression><![CDATA[65000 * $O.logements * $O.facteur_correctif_rch]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H1']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Etas]]></description>
+                        <expression><![CDATA[$O.etas >= 120]]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Usages]]></description>
+                        <expression><![CDATA[$O.type_usage === 'CHAUFFAGE_ECS']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[H2 - Etas >= 120%  - Chauffage/ECS]]></description>
+                <expression><![CDATA[55000 * $O.logements * $O.facteur_correctif_rch]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H2']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Etas]]></description>
+                        <expression><![CDATA[$O.etas >= 120]]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Usages]]></description>
+                        <expression><![CDATA[$O.type_usage === 'CHAUFFAGE_ECS']]></expression>
+                    </condition>
+                </conditions>
+            </regle>
+            <regle>
+                <description><![CDATA[H3 - Etas >= 120%  - Chauffage/ECS]]></description>
+                <expression><![CDATA[43000 * $O.logements * $O.facteur_correctif_rch]]></expression>
+                <conditions>
+                    <condition>
+                        <description><![CDATA[Zone climatique]]></description>
+                        <expression><![CDATA[$O.zone_climatique === 'H3']]></expression>
+                    </condition>
+                    <condition>
+                        <description><![CDATA[Etas]]></description>
+                        <expression><![CDATA[$O.etas >= 120]]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Usages]]></description>
@@ -8704,7 +8860,7 @@
         <regles>
             <regle>
                 <description><![CDATA[Eau chaude sanitaire - H1]]></description>
-                <expression><![CDATA[7100 * $O.quantite]]></expression>
+                <expression><![CDATA[7100 * $O.superficie_capteurs_solaires]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8718,7 +8874,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Eau chaude sanitaire - H2]]></description>
-                <expression><![CDATA[8200 * $O.quantite]]></expression>
+                <expression><![CDATA[8200 * $O.superficie_capteurs_solaires]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8732,7 +8888,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Eau chaude sanitaire - H3]]></description>
-                <expression><![CDATA[10400 * $O.quantite]]></expression>
+                <expression><![CDATA[10400 * $O.superficie_capteurs_solaires]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8746,7 +8902,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Eau chaude sanitaire et chauffage - H1]]></description>
-                <expression><![CDATA[14300 * $O.quantite]]></expression>
+                <expression><![CDATA[14300 * $O.superficie_capteurs_solaires]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8760,7 +8916,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Eau chaude sanitaire et chauffage - H2]]></description>
-                <expression><![CDATA[12800 * $O.quantite]]></expression>
+                <expression><![CDATA[12800 * $O.superficie_capteurs_solaires]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8774,7 +8930,7 @@
             </regle>
             <regle>
                 <description><![CDATA[Eau chaude sanitaire et chauffage - H3]]></description>
-                <expression><![CDATA[11000 * $O.quantite]]></expression>
+                <expression><![CDATA[11000 * $O.superficie_capteurs_solaires]]></expression>
                 <conditions>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -8810,7 +8966,7 @@
         </conditions>
         <regles>
             <regle>
-                <description><![CDATA[2.8 ≤ COP < 3.2 - H1]]></description>
+                <description><![CDATA[2.8 <= COP < 3.2 - H1]]></description>
                 <expression><![CDATA[33800 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8824,7 +8980,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[2.8 ≤ COP < 3.2 - H2]]></description>
+                <description><![CDATA[2.8 <= COP < 3.2 - H2]]></description>
                 <expression><![CDATA[32500 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8838,7 +8994,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[2.8 ≤ COP < 3.2 - H3]]></description>
+                <description><![CDATA[2.8 <= COP < 3.2 - H3]]></description>
                 <expression><![CDATA[29600 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8852,7 +9008,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[3.2 ≤ COP < 3.6 - H1]]></description>
+                <description><![CDATA[3.2 <= COP < 3.6 - H1]]></description>
                 <expression><![CDATA[38900 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8866,7 +9022,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[3.2 ≤ COP < 3.6 - H2]]></description>
+                <description><![CDATA[3.2 <= COP < 3.6 - H2]]></description>
                 <expression><![CDATA[37400 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8880,7 +9036,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[3.2 ≤ COP < 3.6 - H3]]></description>
+                <description><![CDATA[3.2 <= COP < 3.6 - H3]]></description>
                 <expression><![CDATA[34000 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8894,7 +9050,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[3.6 ≤ COP < 4 - H1]]></description>
+                <description><![CDATA[3.6 <= COP < 4 - H1]]></description>
                 <expression><![CDATA[42800 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8908,7 +9064,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[3.6 ≤ COP < 4 - H2]]></description>
+                <description><![CDATA[3.6 <= COP < 4 - H2]]></description>
                 <expression><![CDATA[41200 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8922,7 +9078,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[3.6 ≤ COP < 4 - H3]]></description>
+                <description><![CDATA[3.6 <= COP < 4 - H3]]></description>
                 <expression><![CDATA[37500 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8936,7 +9092,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[4 ≤ COP < 4.4 - H1]]></description>
+                <description><![CDATA[4 <= COP < 4.4 - H1]]></description>
                 <expression><![CDATA[46000 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8950,7 +9106,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[4 ≤ COP < 4.4 - H2]]></description>
+                <description><![CDATA[4 <= COP < 4.4 - H2]]></description>
                 <expression><![CDATA[44200 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8964,7 +9120,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[4 ≤ COP < 4.4 - H3]]></description>
+                <description><![CDATA[4 <= COP < 4.4 - H3]]></description>
                 <expression><![CDATA[40300 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8978,7 +9134,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[4.4 ≤ COP < 4.8 - H1]]></description>
+                <description><![CDATA[4.4 <= COP < 4.8 - H1]]></description>
                 <expression><![CDATA[48600 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -8992,7 +9148,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[4.4 ≤ COP < 4.8 - H2]]></description>
+                <description><![CDATA[4.4 <= COP < 4.8 - H2]]></description>
                 <expression><![CDATA[46700 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
@@ -9006,7 +9162,7 @@
                 </conditions>
             </regle>
             <regle>
-                <description><![CDATA[4.4 ≤ COP < 4.8 - H3]]></description>
+                <description><![CDATA[4.4 <= COP < 4.8 - H3]]></description>
                 <expression><![CDATA[42500 * $O.logements * $O.taux_couverture_ecs]]></expression>
                 <conditions>
                     <condition>
