@@ -16,7 +16,7 @@
                         <xs:element name="id">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
-                                    <xs:pattern value="(AGRI|BAR|BAT|IND|RES|TRA)-(BA|CH|EC|EN|EQ|SE|TH|UT)-[0-9]*(-SE)?v[0-9][-][0-9]*"/>
+                                    <xs:pattern value="(AGRI|BAR|BAT|IND|RES|TRA)-(BA|CH|EC|EN|EQ|SE|TH|UT)-[0-9]*(-SE)?v[0-9]*[-][0-9]*"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
@@ -86,7 +86,7 @@
                             </xs:simpleType>
                         </xs:element>
                         <!-- Durée de vie conventionnelle -->
-                        <xs:element name="duree">
+                        <xs:element name="duree" minOccurs="0">
                             <xs:simpleType>
                                 <xs:restriction base="xs:integer">
                                     <xs:minInclusive value="0"/>
@@ -97,6 +97,15 @@
                         <xs:element name="url">
                             <xs:simpleType>
                                 <xs:restriction base="xs:anyURI"></xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- Liste des qualifications requises pour le professionnel assurant la mise en oeuvre de l'opération -->
+                        <xs:element name="qualifications" minOccurs="0">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="FOO"/>
+                                    <xs:enumeration value="BAR"/>
+                                </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
                         <!-- Champs d'application - Natures du bénéficiaire -->
@@ -116,6 +125,24 @@
                         </xs:element>
                         <!-- Zone d'application - Outre mer -->
                         <xs:element name="outre_mer">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:boolean"></xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- Zone d'application - Maison -->
+                        <xs:element name="maison" minOccurs="0">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:boolean"></xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- Zone d'application - Appartement -->
+                        <xs:element name="appartement" minOccurs="0">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:boolean"></xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- Zone d'application - Immeuble -->
+                        <xs:element name="immeuble" minOccurs="0">
                             <xs:simpleType>
                                 <xs:restriction base="xs:boolean"></xs:restriction>
                             </xs:simpleType>

@@ -109,6 +109,18 @@ Liste des opérateurs de comparaison :
 | $\$a < \$b$ | Inférieur | $\$a$ est inférieur à $\$b$ |
 | $\$a <= \$b$ | Inférieur ou égal | $\$a$ est inférieur ou égal à $\$b$ |
 
+### Cas des valeurs itérables
+
+Certains fiches d'opération standardisée déterminent le montant des certificats d'économies d'énergie sur la base de valeurs itérables, c'est à dire de plusieurs types d'élément éligible. Par exemple la fiche BAR-EQ-110 - Luminaire à modules LED avec dispositif de contrôle pour les parties communes, prévoit des valorisations CEE différentes **cumulatives** selon l'indice de protection aux chocs et/ou la présence d'un dispositif de contrôle intégré au luminaire.
+
+Ces cas de figure sont couverts par le recours aux variables iterables, dont la nomenclature respecte le format suivant : **$O.mon_iterable_[x]_ma_variable**.
+
+Liste non exhaustive des fiches d'opération standardisée concernées :
+
+- BAR-EQ-110
+- BAR-TH-141
+- BAR-TH-161
+
 ## 🤔 Foire aux questions
 
 ### Quelles sont les différences entre \$O.facteur_correctif_shab_x et \$O.facteur_correctif_schb_x ?
