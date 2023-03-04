@@ -70,7 +70,7 @@ Ces variables sont calculées sur la base des données d'entrée transmises.
 
 | Code catégorie | Catégorie | Code | Description | Format | Exemple |
 |:--------------:|:---------:|:----:|-------------|--------|:-------:|
-| B | Bâtiment | $B.energie_chauffage_alt | Energie de chauffage principale du bâtiment | ELECTRICITE, COMBUSTIBLE | Donnée calculée |
+| B | Bâtiment | $B.energie_chauffage_fiche | Energie de chauffage principale du bâtiment | ELECTRICITE, COMBUSTIBLE | ELECTRICITE |
 | O | Opération | $O.code_departement_metropole | L'opération est réalisée en métropole | bool | true |
 | O | Opération | $O.code_departement_outre_mer | L'opération est réalisée en outre-mer | bool | true |
 | O | Opération | $O.code_departement | Code département du projet | XX | 84 |

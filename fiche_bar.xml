@@ -195,7 +195,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'ELECTRICITE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'ELECTRICITE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -209,7 +209,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'ELECTRICITE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'ELECTRICITE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -223,7 +223,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'ELECTRICITE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'ELECTRICITE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -237,7 +237,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'COMBUSTIBLE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -251,7 +251,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'COMBUSTIBLE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -265,7 +265,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'COMBUSTIBLE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -2886,7 +2886,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'ELECTRICITE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'ELECTRICITE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -2900,7 +2900,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'ELECTRICITE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'ELECTRICITE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -2914,7 +2914,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'ELECTRICITE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'ELECTRICITE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -2928,7 +2928,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'COMBUSTIBLE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -2942,7 +2942,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'COMBUSTIBLE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -2956,7 +2956,7 @@
                 <conditions>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'COMBUSTIBLE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3449,7 +3449,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'ELECTRICITE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'ELECTRICITE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3467,7 +3467,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'ELECTRICITE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'ELECTRICITE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3485,7 +3485,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'ELECTRICITE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'ELECTRICITE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3503,7 +3503,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'COMBUSTIBLE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3521,7 +3521,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'COMBUSTIBLE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3539,7 +3539,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'COMBUSTIBLE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3561,7 +3561,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'ELECTRICITE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'ELECTRICITE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3583,7 +3583,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'ELECTRICITE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'ELECTRICITE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3605,7 +3605,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'ELECTRICITE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'ELECTRICITE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3627,7 +3627,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'COMBUSTIBLE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3649,7 +3649,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'COMBUSTIBLE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
@@ -3671,7 +3671,7 @@
                     </condition>
                     <condition>
                         <description><![CDATA[Energie de chauffage]]></description>
-                        <expression><![CDATA[$B.energie_chauffage_alt === 'COMBUSTIBLE']]></expression>
+                        <expression><![CDATA[$B.energie_chauffage_fiche === 'COMBUSTIBLE']]></expression>
                     </condition>
                     <condition>
                         <description><![CDATA[Zone climatique]]></description>
